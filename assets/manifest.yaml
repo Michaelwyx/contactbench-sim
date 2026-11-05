@@ -1,0 +1,236 @@
+# ContactBench simulation asset manifest
+# Read by force_bench.manifest (physics defaults); the articulation entries record the design intent
+# Units: SI (m, kg, N). Angles in degrees. Densities kg/m^3.
+#
+# Per-asset keys:
+#   f3d:            source file inside all_assets.f3z
+#   group:          usage group
+#   articulation:   joints replacing physical mechanisms; PLA springs are DELETED
+#                   on export and reproduced as joint drive stiffness/damping
+#   remove_bodies:  name patterns of bodies to drop at export (springs, jigs)
+#   collision:      per-part collision strategy. Tight-fit mating parts (keyholes,
+#                   card slots, outlet holes, threads) need SDF or fine convex
+#                   decomposition; graspable outer shells can be coarse convex.
+#   fixed_base:     true for things clamped to the table/wall in the benchmark
+
+version: 1
+
+defaults:
+  physics:
+    contact_offset: 0.0015        # 1.5 mm — small parts need tight offsets
+    rest_offset: 0.0
+    friction_static: 0.60         # PLA-on-PLA baseline
+    friction_dynamic: 0.50
+    restitution: 0.0
+    density: 1240                 # PLA
+    solver_position_iterations: 16
+    solver_velocity_iterations: 2
+    max_depenetration_velocity: 0.5   # m/s — prevents explosive de-penetration
+  small_part_physics:             # anything < 30 mm (screws, nuts, keys)
+    contact_offset: 0.0008
+    solver_position_iterations: 32
+    min_mass: 0.002               # clamp tiny masses for solver stability
+  materials:
+    steel:   { density: 7850, friction_static: 0.45, friction_dynamic: 0.40 }
+    pla:     { density: 1240, friction_static: 0.60, friction_dynamic: 0.50 }
+    card:    { density: 1400, friction_static: 0.35, friction_dynamic: 0.30 }  # PVC card
+
+assets:
+
+  # ── 1. fasteners & tools ──────────────────────────────────────────────
+  screw_m3_15: { f3d: 307073e2-9f45-4cd7-9cb7-ff11db66f78c.zip.f3d, group: fasteners,
+    material: steel, collision: { body: sdf, reason: thread engagement },
+    thread: { spec: M3x0.5, model: helical_joint } }
+  screw_m3_20: { f3d: 66f726d4-cc56-411b-890f-8e944cc7c6b7.zip.f3d, group: fasteners,
+    material: steel, collision: { body: sdf }, thread: { spec: M3x0.5, model: helical_joint } }
+  screw_m3_30: { f3d: cba60135-a2c6-43fc-9105-a8eac8c49214.zip.f3d, group: fasteners,
+    material: steel, collision: { body: sdf }, thread: { spec: M3x0.5, model: helical_joint } }
+  screw_m3_55: { f3d: 2beb6d17-2a1d-4d48-a3c9-9eac59bccfbe.zip.f3d, group: fasteners,
+    material: steel, collision: { body: sdf }, thread: { spec: M3x0.5, model: helical_joint } }
+  nut_m3_nyloc: { f3d: 810150fc-5ff3-4072-b52c-fd4077a820f0.zip.f3d, group: fasteners,
+    material: steel, collision: { body: sdf },
+    thread: { spec: M3x0.5, model: helical_joint, prevailing_torque: 0.05 } }  # nyloc drag, N·m
+  nut_thin_nylock: { f3d: 765f019b-0974-4e32-9a59-366b185baf8d.f3d, group: fasteners,
+    material: steel, collision: { body: sdf },
+    thread: { spec: 8-32, model: helical_joint, prevailing_torque: 0.04 } }
+  screw_star_8_32: { f3d: ad8831ab-a109-4715-8349-570298baa8e4.zip.f3d, group: fasteners,
+    material: steel, collision: { body: sdf }, thread: { spec: 8-32, model: helical_joint } }
+  screwdriver: { f3d: 038d48f6-4b43-474f-be82-35918f9ff0c3.f3d, group: fasteners,
+    material: steel, collision: { handle: convex, tip: sdf } }
+  screw_together_blocks: { f3d: 474eb0bc-3823-4886-ab22-684bc392b0be.f3d, group: fasteners,
+    fixed_base: false, collision: { body: convex_decomposition, holes: sdf } }
+  hanging_board: { f3d: 7fad6f6b-d76b-44c8-9782-b2269feb78de.f3d, group: fasteners,
+    fixed_base: true, collision: { board: convex_decomposition, pegs: convex },
+    contains: [wrench_small, wrench_large] }
+
+  # ── 2. cards ──────────────────────────────────────────────────────────
+  card_holder: { f3d: 599667f9-8bbb-4b92-a1ce-b3679ec79025.f3d, group: cards,
+    fixed_base: true, collision: { body: convex_decomposition, slot: sdf },
+    contains: [cards_deck] }
+  card_swiper:
+    f3d: 5045bcc4-c47b-408d-a512-b35b16d0afd9.f3d
+    group: cards
+    fixed_base: true
+    remove_bodies: ["*spring*", "*Spring*"]
+    collision: { body: convex_decomposition, slot: sdf }
+    articulation:
+      # PLA leaf spring preloading the slot → replaced by contact compliance:
+      # a thin "pressure pad" body on a prismatic joint, driven to closed.
+      - joint: pad_preload
+        type: prismatic
+        axis: normal_to_slot
+        limits_m: [0.0, 0.003]
+        drive: { stiffness: 800, damping: 5, target: 0.0 }   # N/m → ~2-4 N swipe drag
+    task_force_profile: { swipe_drag_N: [2.0, 5.0] }
+
+  # ── 3. keys & lock ────────────────────────────────────────────────────
+  key_1: { f3d: c64f6d69-e1d2-48f7-9e83-fd343a183616.f3d, group: keys,
+    material: steel, physics: small_part, collision: { body: sdf, reason: keyhole fit } }
+  key_2: { f3d: 2df3dfc1-9182-4206-8180-6f3dbb0d6b94.f3d, group: keys,
+    material: steel, physics: small_part, collision: { body: sdf } }
+  key_fob: { f3d: 838cf6da-bf54-4cf9-ab68-a86a5d75ba07.f3d, group: keys,
+    collision: { body: convex } }
+  keyring: { f3d: 9b360f28-e5f4-417f-a929-538bcb187251.f3d, group: keys,
+    material: steel, collision: { body: sdf, reason: torus loop — keys thread through } }
+  lock:
+    f3d: 60e191c9-5e0e-4642-b9b7-1e72386d9f91.f3d
+    group: keys
+    fixed_base: true
+    remove_bodies: ["*spring*"]
+    collision: { housing: convex_decomposition, keyway: sdf, cylinder: sdf }
+    articulation:
+      - joint: cylinder_rotate
+        type: revolute
+        axis: keyway_axis
+        limits_deg: [0, 90]
+        drive: { stiffness: 0.02, damping: 0.001, target_deg: 0 }  # N·m/rad return spring
+      - joint: key_insertion            # modeled by contact (SDF), no joint needed;
+        type: none                      # listed for the gating logic: cylinder can
+        gate: key_inserted_depth > 0.9  # only turn when key fully seated
+
+  # ── 4. door hardware ──────────────────────────────────────────────────
+  door:
+    f3d: 3bf904b6-7063-4202-806c-771c6072cbb9.f3d
+    group: door
+    fixed_base: true          # frame fixed; panel articulated
+    remove_bodies: ["*spring*"]
+    articulation:
+      - joint: hinge
+        type: revolute
+        limits_deg: [0, 110]
+        drive: { stiffness: 0, damping: 0.05 }          # free hinge, light damping
+      - joint: latch_bolt
+        type: prismatic
+        limits_m: [0.0, 0.008]
+        drive: { stiffness: 400, damping: 2, target: 0.0 }  # latch spring → extended
+    collision: { frame: convex_decomposition, panel: convex_decomposition, latch: sdf }
+  door_knob:
+    f3d: 98cb500e-e8ad-4e28-a4be-ede79b7aa6b8.f3d
+    group: door
+    remove_bodies: ["*spring*"]
+    articulation:
+      - joint: knob_rotate
+        type: revolute
+        limits_deg: [-60, 60]
+        drive: { stiffness: 0.15, damping: 0.005, target_deg: 0 }  # return-to-center
+        couples: { joint: latch_bolt, ratio: -0.0001 }  # knob angle retracts latch
+    collision: { knob: convex_decomposition, mechanism: sdf }
+  knob_push_down:
+    f3d: 7bc18187-219d-450c-9eee-518ebe1e8b01.f3d
+    group: door
+    remove_bodies: ["*spring*"]
+    articulation:
+      - joint: knob_push
+        type: prismatic
+        limits_m: [0.0, 0.006]
+        drive: { stiffness: 600, damping: 4, target: 0.0 }
+      - joint: knob_rotate
+        type: revolute
+        limits_deg: [-60, 60]
+        drive: { stiffness: 0.15, damping: 0.005, target_deg: 0 }
+        gate: knob_push > 0.9      # must push before turn (child-safety style)
+  knob_snap:
+    f3d: 9be83e0c-ac34-47fc-b697-402b3bf6dd01.f3d
+    group: door
+    remove_bodies: ["*spring*"]
+    articulation:
+      - joint: knob_rotate
+        type: revolute
+        limits_deg: [-90, 90]
+        detents: { spacing_deg: 30, torque: 0.08 }   # snap detents via friction pulses
+        drive: { stiffness: 0, damping: 0.01 }
+
+  # ── 5. electrical ─────────────────────────────────────────────────────
+  charging_block:
+    f3d: 2690f8d0-ca6d-41cb-9cb7-b8398947b17c.f3d
+    group: electrical
+    collision: { body: convex, prongs: sdf }
+    physics: { min_mass: 0.03 }
+  charging_block_outlet:
+    f3d: 75601191-bea1-4766-bb95-3ae160fff8b6.f3d
+    group: electrical
+    fixed_base: true
+    remove_bodies: ["*spring*"]
+    collision: { plate: convex_decomposition, receptacles: sdf }
+    articulation:
+      # prong retention: two contact fingers per slot on preloaded prismatic joints
+      - joint: contact_finger_L
+        type: prismatic
+        limits_m: [0.0, 0.0015]
+        drive: { stiffness: 3000, damping: 10, target: 0.0 }  # → 8-15 N insertion force
+      - joint: contact_finger_R
+        type: prismatic
+        limits_m: [0.0, 0.0015]
+        drive: { stiffness: 3000, damping: 10, target: 0.0 }
+    task_force_profile: { insert_N: [8, 15], extract_N: [6, 12] }
+
+  # Newton's own RJ45 example asset (newton/examples/assets/rj45_plug.usd,
+  # Apache-2.0), exported body-by-body to bodies/rj45_plug/*.stl in the USD's
+  # assembly frame (the SEATED pose; +y = insertion, z up; cm like the rest).
+  # It replaces cable_and_slot for the Ethernet task: its catch shoulder is
+  # 0.89 mm (cable_and_slot: 0.52 mm, below the SDF margin), so the latch is a
+  # contact mechanism, not a scripted interlock.  See tasks/ethernet_rig.py.
+  rj45_plug:
+    source: newton.examples.get_asset("rj45_plug.usd")   # not a Fusion f3d
+    group: electrical
+    fixed_base: true                       # the socket; plug + latch are free
+    collision: { socket: sdf, plug: sdf, latch: sdf }
+    articulation:
+      - joint: latch                        # hinge at the latch prim origin
+        type: revolute
+        axis: [-1, 0, 0]
+        limits_rad: [-0.30, 0.30]           # inward stop / outward
+        drive: { stiffness: 0.15, damping: 0.003, target: 0.0 }
+    task_force_profile: { insert_N: [4, 12], latch_hold_N: [30, 40], press_N: [3, 5] }
+
+  # ── 6. kitchen & containers ───────────────────────────────────────────
+  utensil_fork: { f3d: 243d80e5-1588-4f98-9388-66dc0f76824b.f3d, group: kitchen,
+    physics: small_part, collision: { body: convex_decomposition } }
+  utensil_knife: { f3d: 89d76f3d-1b8c-432a-8dfc-b5b23c34d089.f3d, group: kitchen,
+    physics: small_part, collision: { body: convex_decomposition } }
+  utensil_spoon: { f3d: db6a9667-8b4e-44fc-8fc8-3ece5a69dbce.f3d, group: kitchen,
+    physics: small_part, collision: { body: convex_decomposition } }
+  utensil_chopstick: { f3d: 353fdb40-7dcd-4a0c-b00f-73577459ff2e.f3d, group: kitchen,
+    physics: small_part, collision: { body: convex } }
+  utensil_bin: { f3d: f181ff5f-932b-42a8-80db-d7e392b6033b.f3d, group: kitchen,
+    fixed_base: false, collision: { body: convex_decomposition, interior: sdf } }
+  utensil_bin_large: { f3d: 5bba0166-5f9e-48aa-b21f-9571fc7ff79d.f3d, group: kitchen,
+    fixed_base: false, collision: { body: convex_decomposition, interior: sdf } }
+  storage_bin: { f3d: 69a07267-1210-4d0e-b358-cf9d2105f544.f3d, group: kitchen,
+    fixed_base: false, collision: { body: convex_decomposition, interior: sdf } }
+  cup: { f3d: 7975b891-8157-4d6b-b9dc-49471e155efb.f3d, group: kitchen,
+    collision: { body: convex_decomposition, reason: cups nest — interior matters } }
+  bottle:
+    f3d: 3537e803-6a02-4665-ad40-fababf0d499d.f3d
+    group: kitchen
+    collision: { body: convex_decomposition, neck_thread: sdf }
+    articulation:
+      - joint: cap_thread
+        type: helical                 # screw joint: rotation coupled to translation
+        pitch_mm_per_rev: 3.0
+        limits_rev: [0, 2.5]
+        friction_torque: 0.02
+
+  # ── root assembly (not a sim asset) ──────────────────────────────────
+  all_assets: { f3d: 096dc5cf-60ee-42d8-bec7-0482c547cc56.f3d, group: _root,
+    note: XRef assembly of everything; not imported directly }

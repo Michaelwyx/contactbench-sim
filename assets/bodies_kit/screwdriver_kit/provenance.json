@@ -1,0 +1,38 @@
+{
+ "units": "m",
+ "frame": "finalized-kit STEP frame (z up), assembly coordinates kept",
+ "source_zip": "STEP-20261015T040134Z-1-001.zip (repo root, sha256 998af1e66c067927175c358ccfb482253b6ec1921fa239c80d5395142babac72)",
+ "tessellation": "cascadio 0.1.1 via final_asset_table/source/convert_step.py (0.01 mm chordal, 0.5 rad angular)",
+ "mesh_cache": "paper-writing/figures/asset-overviews/final_asset_table/mesh_cache",
+ "written_by": "export_kit_parts (2026-10-16 session, for the appendix tool/placing tasks)",
+ "files": {
+  "screwdriver.stl": {
+   "step_file": "screwdriver.step",
+   "step_sha256": "10ecae30ef94eb0888cf3b34a742e9e8a98ac12cf93d8926695ed470342449f4",
+   "part": "Component2",
+   "role": "screwdriver: 125 mm, 12 mm fluted handle, 5.0 mm square shank/tip (lying along x)",
+   "fusion_color_srgb": [
+    0,
+    0,
+    0
+   ],
+   "n_tris": 10994,
+   "watertight": true,
+   "volume_cm3": 10.5002,
+   "bounds_mm": [
+    [
+     -51.423,
+     -5.923,
+     -6.0
+    ],
+    [
+     73.577,
+     6.077,
+     6.0
+    ]
+   ],
+   "stl_sha256": "b33d48373d7c8a3136c4df3a573f0e3fd7c0ce42194e94bd5006e40521aaffbf",
+   "stray_faces_dropped": 0
+  }
+ }
+}

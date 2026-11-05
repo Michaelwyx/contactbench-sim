@@ -1,0 +1,29 @@
+{
+ "object": "wrench",
+ "units": "m",
+ "frame": "finalized-kit STEP frame (z up)",
+ "source_step": "wrench.step",
+ "source_sha256": "0f5fb6c9c186436f74bd34f8400500119ba3b4dcca1e9131b671f3ffb6af4fcc",
+ "tessellation": {
+  "tol_linear_mm": 0.01,
+  "tol_angular_rad": 0.5
+ },
+ "from": "paper-writing/figures/asset-overviews/final_asset_table/mesh_cache/wrench.npz",
+ "stl_sha256": "4c07dd40fdb4e1550fdc2f46b3ba7728c6aa52b040236fd320e0faa749de5351",
+ "faces": 13098,
+ "watertight": true,
+ "volume_cm3": 10.903,
+ "bounds_mm": [
+  [
+   -5.68,
+   -15.0,
+   -7.5
+  ],
+  [
+   104.558,
+   23.377,
+   0.0
+  ]
+ ],
+ "written_by": "force_bench.appendix_tasks hang_wrench / hang_ruler (2026-10-15)"
+}

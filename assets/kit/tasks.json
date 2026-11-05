@@ -1,0 +1,1619 @@
+{
+ "source": "https://jingyi-xiang.github.io/contactbench/",
+ "config": "config/tasks/index.js",
+ "imported": "2026-10-28",
+ "numbering": "paper Table C1 (the site's ids 21-32 are the paper's 20-31)",
+ "tasks": {
+  "1": {
+   "site_id": "01",
+   "name": "Grasp target key from keychain",
+   "skills": [
+    "clutter",
+    "thin"
+   ],
+   "description": "For a keychain in the workspace with multiple keys, find and singulate the specified target key among all keys on the keychain.",
+   "success": "The robot movement stops with only the specified target key stably grasped within the robot end-effector.",
+   "assets": [
+    "key-1",
+    "key-2",
+    "key-3",
+    "key-fob",
+    "keyring"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/grasp_target_key_from_keychain.mp4",
+   "variations": [
+    {
+     "axis": "Object geometry",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Key 1",
+       "assets": [
+        "key-1"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Key 2",
+       "assets": [
+        "key-2"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Key fob",
+       "assets": [
+        "key-fob"
+       ],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Number of objects",
+     "type": "visual+behavioral",
+     "instances": []
+    }
+   ]
+  },
+  "2": {
+   "site_id": "02",
+   "name": "Retrieve single utensil from bin",
+   "skills": [
+    "clutter",
+    "thin"
+   ],
+   "description": "A utensil storage bin is placed in the workspace. The target utensil is placed in the bin alongside multiple other utensils. Pick up a single copy of the target utensil from the cluttered storage bin and place it on the table without removing other objects from the bin.",
+   "success": "The robot movement stops after separating a single copy of the target utensil and placing it on the table. Other utensils should remain in the storage bin. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "chopstick",
+    "fork",
+    "knife",
+    "spoon",
+    "utensil-bin-horizontal",
+    "utensil-bin-vertical"
+   ],
+   "video": "",
+   "variations": [
+    {
+     "axis": "Scene arrangement",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Chopsticks in horizontal bin",
+       "assets": [],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/retrieve_single_chopstick_from_bin_2.mp4"
+      },
+      {
+       "label": "Chopsticks in vertical bin",
+       "assets": [],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/retrieve_single_chopstick_from_bin.mp4"
+      },
+      {
+       "label": "Mixed utensils in vertical bin",
+       "assets": [],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/retrieve_single_spoon_from_bin.mp4"
+      }
+     ]
+    },
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Chopstick",
+       "assets": [
+        "chopstick"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Fork",
+       "assets": [
+        "fork"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Knife",
+       "assets": [
+        "knife"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Spoon",
+       "assets": [
+        "spoon"
+       ],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Number of objects",
+     "type": "visual+behavioral",
+     "instances": []
+    }
+   ]
+  },
+  "3": {
+   "site_id": "03",
+   "name": "Retrieve single fastener from bin",
+   "skills": [
+    "clutter",
+    "thin"
+   ],
+   "description": "A fastener storage bin is placed in the workspace. The target fastener is placed in the bin alongside multiple other fasteners. Pick up a single copy of the target fastener from the cluttered storage bin and place it on the table without removing other objects from the bin.",
+   "success": "The robot movement stops after separating a single copy of the target fastener and placing it on the table. Other fasteners should remain in the storage bin. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "fastener-bin",
+    "screw",
+    "bolt",
+    "nut"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/retrieve_single_screw_from_bin.mp4",
+   "variations": [
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Screw",
+       "assets": [
+        "screw"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Nut",
+       "assets": [
+        "nut"
+       ],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Number of objects",
+     "type": "visual+behavioral",
+     "instances": []
+    }
+   ]
+  },
+  "4": {
+   "site_id": "04",
+   "name": "Retrieve top cup from stack",
+   "skills": [
+    "clutter"
+   ],
+   "description": "A neatly organized stack of cups is placed in the workspace. Pick up the top cup from the stack and place it on the table without disturbing the rest of the stack.",
+   "success": "The robot movement stops after separating the top cup from the stack and placing it on the table. The remaining cups should remain in a neat stack. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "cup"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/retrieve_top_cup_from_stack.mp4",
+   "variations": [
+    {
+     "axis": "Number of objects",
+     "type": "visual+behavioral",
+     "instances": []
+    }
+   ]
+  },
+  "5": {
+   "site_id": "05",
+   "name": "Retrieve single card from deck",
+   "skills": [
+    "clutter",
+    "thin"
+   ],
+   "description": "A neatly organized deck of cards is placed in a cardholder in the workspace. Pick up a single card and place it on the table without disrupting the rest of the card deck.",
+   "success": "The robot movement stops after separating a single card from the deck and placing it on the table. The remaining cards should remain a neat deck in the cardholder. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "card",
+    "card-holder"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/retrieve_single_card_from_deck.mp4",
+   "variations": [
+    {
+     "axis": "Number of objects",
+     "type": "visual+behavioral",
+     "instances": []
+    }
+   ]
+  },
+  "6": {
+   "site_id": "06",
+   "name": "Pick up object from platform",
+   "skills": [
+    "thin"
+   ],
+   "description": "Pick up the thin and/or small object placed on the flat platform.",
+   "success": "The target object is stably grasped by the robot and lifted off the platform.",
+   "assets": [
+    "platform",
+    "key-1",
+    "key-2",
+    "key-3",
+    "key-fob",
+    "keyring",
+    "screw",
+    "bolt",
+    "nut",
+    "chopstick",
+    "knife",
+    "ruler",
+    "allen-key",
+    "card"
+   ],
+   "video": "",
+   "variations": [
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Card",
+       "assets": [],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/pick_up_card_from_platform.mp4"
+      },
+      {
+       "label": "Ruler",
+       "assets": [
+        "ruler"
+       ],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/pick_up_ruler_from_platform.mp4"
+      },
+      {
+       "label": "Key 1",
+       "assets": [
+        "key-1"
+       ],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/pick_up_key_from_platform.mp4"
+      },
+      {
+       "label": "Nut",
+       "assets": [
+        "nut"
+       ],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/pick_up_nut_from_platform.mp4"
+      },
+      {
+       "label": "Allen key",
+       "assets": [
+        "allen-key"
+       ],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/pick_up_allen_key_from_platform.mp4"
+      }
+     ]
+    },
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Allen key",
+       "assets": [
+        "allen-key"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Card",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "Key 1",
+       "assets": [
+        "key-1"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Key 2",
+       "assets": [
+        "key-2"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Key fob",
+       "assets": [
+        "key-fob"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Keyring",
+       "assets": [
+        "keyring"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Nut",
+       "assets": [
+        "nut"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Screw",
+       "assets": [
+        "screw"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Chopstick",
+       "assets": [
+        "chopstick"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Knife",
+       "assets": [
+        "knife"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Wrench",
+       "assets": [
+        "wrench"
+       ],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "7": {
+   "site_id": "07",
+   "name": "Collect utensils",
+   "skills": [
+    "multi",
+    "place"
+   ],
+   "description": "Collect all utensils scattered across the workspace and place them into the storage bin. Being able to hold multiple utensils simultaneously will greatly increase task completion efficiency.",
+   "success": "The robot movement stops after placing all utensils inside the storage bin. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "chopstick",
+    "fork",
+    "knife",
+    "spoon",
+    "utensil-bin-horizontal",
+    "utensil-bin-vertical"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/collect_utensils.mp4",
+   "variations": [
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Chopstick",
+       "assets": [
+        "chopstick"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Fork",
+       "assets": [
+        "fork"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Knife",
+       "assets": [
+        "knife"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Spoon",
+       "assets": [
+        "spoon"
+       ],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Number of objects",
+     "type": "visual+behavioral",
+     "instances": []
+    }
+   ]
+  },
+  "8": {
+   "site_id": "08",
+   "name": "Collect fasteners",
+   "skills": [
+    "multi",
+    "place"
+   ],
+   "description": "Collect all fasteners scattered across the workspace and place them into the storage bin. Being able to hold multiple fasteners simultaneously will greatly increase task completion efficiency.",
+   "success": "The robot movement stops after placing all fasteners inside the storage bin. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "fastener-bin",
+    "screw",
+    "bolt",
+    "nut"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/collect_nuts.mp4",
+   "variations": [
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Screw",
+       "assets": [
+        "screw"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Nut",
+       "assets": [
+        "nut"
+       ],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Number of objects",
+     "type": "visual+behavioral",
+     "instances": []
+    }
+   ]
+  },
+  "9": {
+   "site_id": "09",
+   "name": "Hang object",
+   "skills": [
+    "place"
+   ],
+   "description": "Hang the object in-hand onto an empty hanging board hook.",
+   "success": "The robot movement stops after placing the target object onto a hanging hook. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "key-1",
+    "key-2",
+    "key-3",
+    "key-fob",
+    "keyring",
+    "wrench",
+    "ruler",
+    "hanging-board"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/hang_wrench.mp4",
+   "variations": [
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Wrench",
+       "assets": [
+        "wrench"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Ruler",
+       "assets": [
+        "ruler"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Keychain",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "10": {
+   "site_id": "10",
+   "name": "Place utensil into bin",
+   "skills": [
+    "place"
+   ],
+   "description": "A utensil bin with utensils already stored in it is placed in the workspace. Starting with a utensil held in hand, find an open pocket in the cluttered utensil storage bin and place the held utensil in it.",
+   "success": "The robot movement stops after placing the target object into the storage bin. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "chopstick",
+    "fork",
+    "knife",
+    "spoon",
+    "utensil-bin-horizontal",
+    "utensil-bin-vertical"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/place_fork_into_bin.mp4",
+   "variations": [
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Chopstick",
+       "assets": [
+        "chopstick"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Fork",
+       "assets": [
+        "fork"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Knife",
+       "assets": [
+        "knife"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Spoon",
+       "assets": [
+        "spoon"
+       ],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Number of objects",
+     "type": "visual+behavioral",
+     "instances": []
+    }
+   ]
+  },
+  "11": {
+   "site_id": "11",
+   "name": "In-hand repose",
+   "skills": [
+    "inhand"
+   ],
+   "description": "Manipulate the target object in-hand, such that it ends up in the desired pose relative to the hand. Examples include flipping the orientation of a key or a USB stick to align with the slot.",
+   "success": "The target object pose converges and stabilizes to the desired pose, and remains within the robot end-effector throughout the execution without being dropped.",
+   "assets": [
+    "chopstick",
+    "fork",
+    "knife",
+    "spoon",
+    "key-1",
+    "key-2",
+    "key-3",
+    "card",
+    "allen-key",
+    "screwdriver",
+    "wrench",
+    "usb-stick-1",
+    "usb-stick-2",
+    "usb-stick-3",
+    "usb-stick-4",
+    "screw",
+    "bolt"
+   ],
+   "video": "",
+   "variations": [
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Key 1",
+       "assets": [
+        "key-1"
+       ],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/in_hand_repose_key_2.mp4"
+      },
+      {
+       "label": "USB",
+       "assets": [],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/in_hand_repose_usb.mp4"
+      },
+      {
+       "label": "Screw",
+       "assets": [
+        "screw"
+       ],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/in_hand_repose_screw.mp4"
+      }
+     ]
+    },
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Bottle cap",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "Card",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "Charging block 4",
+       "assets": [
+        "charging-block-4"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Key 1",
+       "assets": [
+        "key-1"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Key 2",
+       "assets": [
+        "key-2"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Nut",
+       "assets": [
+        "nut"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Screw",
+       "assets": [
+        "screw"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Chopstick",
+       "assets": [
+        "chopstick"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Fork",
+       "assets": [
+        "fork"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Knife",
+       "assets": [
+        "knife"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Spoon",
+       "assets": [
+        "spoon"
+       ],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "12": {
+   "site_id": "12",
+   "name": "In-hand grasp transition",
+   "skills": [
+    "inhand"
+   ],
+   "description": "Manipulate the target object in-hand, such that it ends up with the desired grasp type (see grasp types defined in the Grasp Taxonomy).",
+   "success": "The target object pose converges and stabilizes with the desired grasp type, and remains within the robot end-effector throughout the execution without being dropped.",
+   "assets": [
+    "chopstick",
+    "fork",
+    "knife",
+    "spoon",
+    "allen-key",
+    "screwdriver",
+    "wrench"
+   ],
+   "video": "",
+   "variations": [
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Allen key",
+       "assets": [
+        "allen-key"
+       ],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/in_hand_grasp_transition_allen_key.mp4"
+      },
+      {
+       "label": "Screwdriver",
+       "assets": [
+        "screwdriver"
+       ],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/in_hand_grasp_transition_screwdriver.mp4"
+      },
+      {
+       "label": "Wrench",
+       "assets": [
+        "wrench"
+       ],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/in_hand_grasp_transition_wrench.mp4"
+      }
+     ]
+    },
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Allen key",
+       "assets": [
+        "allen-key"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Screwdriver",
+       "assets": [
+        "screwdriver"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Chopstick",
+       "assets": [
+        "chopstick"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Fork",
+       "assets": [
+        "fork"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Knife",
+       "assets": [
+        "knife"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Spoon",
+       "assets": [
+        "spoon"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Wrench",
+       "assets": [
+        "wrench"
+       ],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "13": {
+   "site_id": "13",
+   "name": "Tighten screw with Allen key",
+   "skills": [
+    "extrinsic",
+    "insert"
+   ],
+   "description": "A screw is placed into the screw slot of an assembly block in the workspace, but the threads are unengaged. Use the Allen key grasped in hand to tighten the screw.",
+   "success": "The screw is tightened and remains stationary when a small force is applied in an attempt to rotate the screw. The robot movement stops after terminating the tightening motion, moving away from, and breaking contact with the screw.",
+   "assets": [
+    "allen-key",
+    "toy-assembly-block",
+    "nut",
+    "screw"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/tighten_screw_with_allen_key.mp4",
+   "variations": [
+    {
+     "axis": "Required rotation amount",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "Longer screw",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "14": {
+   "site_id": "14",
+   "name": "Loosen screw with Allen key",
+   "skills": [
+    "extrinsic",
+    "insert"
+   ],
+   "description": "A screw is placed into the screw slot of an assembly block in the workspace and is fully tightened. Use the Allen key grasped in hand to loosen the screw.",
+   "success": "The screw is loosened and can rotate freely when a small force is applied in an attempt to rotate the screw. The robot movement stops after terminating the loosening motion, moving away from, and breaking contact with the screw.",
+   "assets": [
+    "allen-key",
+    "toy-assembly-block",
+    "nut",
+    "screw"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/loosen_screw_with_allen_key.mp4",
+   "variations": []
+  },
+  "15": {
+   "site_id": "15",
+   "name": "Tighten screw with screwdriver",
+   "skills": [
+    "extrinsic",
+    "insert"
+   ],
+   "description": "A screw is placed into the screw slot of an assembly block in the workspace, but the threads are unengaged. Use the screwdriver grasped in hand to tighten the screw.",
+   "success": "The screw is tightened and remains stationary when a small force is applied in an attempt to rotate the screw. The robot movement stops after terminating the tightening motion, moving away from, and breaking contact with the screw.",
+   "assets": [
+    "screwdriver",
+    "toy-assembly-block",
+    "nut",
+    "screw"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/tighten_screw_with_screwdriver.mp4",
+   "variations": [
+    {
+     "axis": "Required rotation amount",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "Longer screw",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "16": {
+   "site_id": "16",
+   "name": "Loosen screw with screwdriver",
+   "skills": [
+    "extrinsic",
+    "insert"
+   ],
+   "description": "A screw is placed into the screw slot of an assembly block in the workspace and is fully tightened. Use the screwdriver grasped in hand to loosen the screw.",
+   "success": "The screw is loosened and can rotate freely when a small force is applied in an attempt to rotate the screw. The robot movement stops after terminating the loosening motion, moving away from, and breaking contact with the screw.",
+   "assets": [
+    "screwdriver",
+    "toy-assembly-block",
+    "nut",
+    "screw"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/loosen_screw_with_screwdriver.mp4",
+   "variations": []
+  },
+  "17": {
+   "site_id": "17",
+   "name": "Tighten nut with wrench",
+   "skills": [
+    "extrinsic",
+    "insert"
+   ],
+   "description": "A nut is threaded onto a screw head in the workspace but is left untightened. Use the wrench grasped in hand to tighten the nut.",
+   "success": "The nut is tightened and remains stationary when a small force is applied in an attempt to rotate the nut. The robot movement stops after terminating the tightening motion, moving away from, and breaking contact with the nut.",
+   "assets": [
+    "wrench",
+    "toy-assembly-block",
+    "nut",
+    "bolt"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/tighten_nut_with_wrench.mp4",
+   "variations": []
+  },
+  "18": {
+   "site_id": "18",
+   "name": "Loosen nut with wrench",
+   "skills": [
+    "extrinsic",
+    "insert"
+   ],
+   "description": "A nut is threaded onto a screw head in the workspace and is fully tightened. Use the wrench grasped in hand to loosen the nut.",
+   "success": "The nut is loosened and can rotate freely when a small force is applied in an attempt to rotate the nut. The robot movement stops after terminating the loosening motion, moving away from, and breaking contact with the nut.",
+   "assets": [
+    "wrench",
+    "toy-assembly-block",
+    "nut",
+    "bolt"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/loosen_nut_with_wrench.mp4",
+   "variations": []
+  },
+  "19": {
+   "site_id": "19",
+   "name": "Put bottle cap onto bottle",
+   "skills": [
+    "insert",
+    "artic"
+   ],
+   "description": "A bottle without a cap is placed in the workspace. Screw the bottle cap held in hand onto the bottle and tighten it.",
+   "success": "The bottle cap is tightened and remains stationary when a small force is applied in an attempt to rotate the cap. The robot movement stops after terminating the tightening motion, moving away from, and breaking contact with the task objects.",
+   "assets": [
+    "bottle-1",
+    "bottle-2",
+    "bottle-3"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/put_bottle_cap_onto_bottle.mp4",
+   "variations": [
+    {
+     "axis": "Required rotation amount",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "More rotation",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "20": {
+   "site_id": "21",
+   "name": "Thread nut onto screw",
+   "skills": [
+    "insert",
+    "artic"
+   ],
+   "description": "Screw the nut held in hand onto the screw head placed in the workspace such that their threads fully engage.",
+   "success": "The nut and screw threads engage. The robot movement stops after terminating the rotation motion, moving away from, and breaking contact with the task objects.",
+   "assets": [
+    "toy-assembly-block",
+    "nut",
+    "bolt"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/thread_nut_onto_screw.mp4",
+   "variations": []
+  },
+  "21": {
+   "site_id": "22",
+   "name": "Insert key into lock",
+   "skills": [
+    "insert"
+   ],
+   "description": "A lock is placed in the workspace. Insert the key held in hand into the lock.",
+   "success": "The key is inserted into the lock. The robot movement stops after terminating the insertion motion, moving away from, and breaking contact with the task objects.",
+   "assets": [
+    "lock-module",
+    "key-1",
+    "doorknob-module",
+    "door"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/insert_key_into_lock.mp4",
+   "variations": []
+  },
+  "22": {
+   "site_id": "23",
+   "name": "Plug in charger",
+   "skills": [
+    "insert"
+   ],
+   "description": "An outlet is placed in the workspace. Fully insert the charger held in hand into the outlet.",
+   "success": "The charger is fully inserted into the outlet, such that it does not noticeably move when further pushed toward the outlet. The robot movement stops after terminating the insertion motion, moving away from, and breaking contact with the task objects.",
+   "assets": [
+    "charging-block-1",
+    "charging-block-2",
+    "charging-block-3",
+    "charging-block-4",
+    "charging-block-5",
+    "outlet"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/plug_in_charger.mp4",
+   "variations": [
+    {
+     "axis": "Insertion force",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "More force",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Object geometry",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Charging block 1",
+       "assets": [
+        "charging-block-1"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Charging block 2",
+       "assets": [
+        "charging-block-2"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Charging block 3",
+       "assets": [
+        "charging-block-3"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Charging block 4",
+       "assets": [
+        "charging-block-4"
+       ],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "23": {
+   "site_id": "24",
+   "name": "Place card into holder",
+   "skills": [
+    "place"
+   ],
+   "description": "A card holder that already contains other cards is placed in the workspace. Place the card held in hand into the card holder.",
+   "success": "The robot movement stops after placing the card in the card holder, with existing cards remaining in the card holder. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "card",
+    "card-holder"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/place_card_into_deck.mp4",
+   "variations": [
+    {
+     "axis": "Number of objects",
+     "type": "visual+behavioral",
+     "instances": []
+    }
+   ]
+  },
+  "24": {
+   "site_id": "25",
+   "name": "Stack cups",
+   "skills": [
+    "place"
+   ],
+   "description": "Multiple cups are scattered around the workspace. Collect the cups and place them inside one another to form a tight stack.",
+   "success": "The robot movement stops after all cups form a tight, upright stack (not knocked over). The robot should not remain in contact with the task objects.",
+   "assets": [
+    "cup"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/stack_cups.mp4",
+   "variations": [
+    {
+     "axis": "Number of objects",
+     "type": "visual+behavioral",
+     "instances": []
+    }
+   ]
+  },
+  "25": {
+   "site_id": "26",
+   "name": "Plug in Ethernet",
+   "skills": [
+    "insert"
+   ],
+   "description": "Fully insert the Ethernet plug held in hand into a socket placed in the workspace.",
+   "success": "The Ethernet plug is fully inserted into the socket with its latch engaged, such that the plug can’t be withdrawn by a light pull. The robot movement stops after terminating the insertion motion, moving away from, and breaking contact with the task objects.",
+   "assets": [
+    "ethernet-plug-and-slot"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/plug_in_ethernet.mp4",
+   "variations": []
+  },
+  "26": {
+   "site_id": "27",
+   "name": "Plug in USB",
+   "skills": [
+    "insert"
+   ],
+   "description": "Fully insert the USB stick held in hand into the USB slot placed in the workspace.",
+   "success": "The USB stick is fully inserted into the slot, such that it does not noticeably move when further pushed toward the slot. The robot movement stops after terminating the insertion motion, moving away from, and breaking contact with the task objects.",
+   "assets": [
+    "usb-stick-1",
+    "usb-stick-2",
+    "usb-stick-3",
+    "usb-stick-4",
+    "usb-slot"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/plug_in_usb.mp4",
+   "variations": [
+    {
+     "axis": "Insertion force",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "More force",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Object geometry",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "USB 1",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "USB 2",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "USB 3",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "27": {
+   "site_id": "28",
+   "name": "Turn key to unlock door",
+   "skills": [
+    "artic"
+   ],
+   "description": "A locked door module is placed in the workspace with a key already inserted into the lock. Turn the key to unlock the door.",
+   "success": "The key is fully turned such that the door can be opened. The robot movement stops after terminating the rotation motion, moving away from, and breaking contact with the task objects.",
+   "assets": [
+    "lock-module",
+    "key-1",
+    "doorknob-module",
+    "door"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/turn_key_to_unlock_door.mp4",
+   "variations": [
+    {
+     "axis": "Required rotation amount",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "90 degree rotation",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "180 degree rotation",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "28": {
+   "site_id": "29",
+   "name": "Turn doorknob to open door",
+   "skills": [
+    "artic"
+   ],
+   "description": "Turn the doorknob fully to unlock the door, then open the door.",
+   "success": "The door is opened by at least 5 degrees, such that it is visually obvious that the door has been unlocked.",
+   "assets": [
+    "lock-module",
+    "doorknob-module",
+    "door"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/turn_doorknob_to_open_door.mp4",
+   "variations": [
+    {
+     "axis": "Required rotation amount",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "40 degree rotation",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "48 degree rotation",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "60 degree rotation",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "72 degree rotation",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "80 degree rotation",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Rotation force",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "2.5mm spring",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "5mm spring",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "7.5mm spring",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Object geometry",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Doorknob 1 (50mm)",
+       "assets": [
+        "doorknob-1-50mm"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Doorknob 1 (55mm)",
+       "assets": [
+        "doorknob-1-55mm"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Doorknob 1 (60mm)",
+       "assets": [
+        "doorknob-1-60mm"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Doorknob 2 (50mm)",
+       "assets": [
+        "doorknob-2-50mm"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Doorknob 2 (55mm)",
+       "assets": [
+        "doorknob-2-55mm"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Doorknob 2 (60mm)",
+       "assets": [
+        "doorknob-2-60mm"
+       ],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "29": {
+   "site_id": "30",
+   "name": "Turn door handle to open door",
+   "skills": [
+    "artic"
+   ],
+   "description": "Turn the door handle fully to unlock the door, then open the door.",
+   "success": "The door is opened by at least 5 degrees, such that it is visually obvious that the door has been unlocked.",
+   "assets": [
+    "lock-module",
+    "doorknob-module",
+    "door"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/turn_door_handle_to_open_door.mp4",
+   "variations": [
+    {
+     "axis": "Required rotation amount",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "40 degree rotation",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "48 degree rotation",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "60 degree rotation",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "72 degree rotation",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "80 degree rotation",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Rotation force",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "2.5mm spring",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "5mm spring",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "7.5mm spring",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    },
+    {
+     "axis": "Object geometry",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Door handle 1",
+       "assets": [
+        "door-handle-1"
+       ],
+       "video": ""
+      },
+      {
+       "label": "Door handle 2",
+       "assets": [
+        "door-handle-2"
+       ],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "30": {
+   "site_id": "31",
+   "name": "Turn dial to target position",
+   "skills": [
+    "artic"
+   ],
+   "description": "Operate the dial to turn it to the specified target position.",
+   "success": "The dial is turned to the target position. For dials that can be turned continuously, the final position should be within half a tick interval from the target position. The robot movement stops after terminating the rotation motion, moving away from, and breaking contact with the task objects.",
+   "assets": [
+    "dial",
+    "dial-push-down-to-turn",
+    "dial-snap-to-position"
+   ],
+   "video": "",
+   "variations": [
+    {
+     "axis": "Object type",
+     "type": "behavioral",
+     "instances": [
+      {
+       "label": "Standard continuous dial",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "Continuous dial that requires pressing down to turn",
+       "assets": [],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/turn_dial_to_target_position_press_down.mp4"
+      }
+     ]
+    },
+    {
+     "axis": "Object type",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Snap-to-position dial",
+       "assets": [],
+       "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/turn_dial_to_target_position_snap.mp4"
+      }
+     ]
+    },
+    {
+     "axis": "Object geometry",
+     "type": "visual+behavioral",
+     "instances": [
+      {
+       "label": "Flat knob",
+       "assets": [],
+       "video": ""
+      },
+      {
+       "label": "Round knob",
+       "assets": [],
+       "video": ""
+      }
+     ]
+    }
+   ]
+  },
+  "31": {
+   "site_id": "32",
+   "name": "Install light bulb",
+   "skills": [
+    "insert",
+    "artic"
+   ],
+   "description": "A light bulb socket is placed in the workspace. Screw the light bulb held in hand into the socket and tighten it.",
+   "success": "The light bulb is tightened and remains stationary when a small force is applied in an attempt to rotate it. The robot movement stops after terminating the tightening motion, moving away from, and breaking contact with the task objects.",
+   "assets": [
+    "lightbulb-1",
+    "lightbulb-2",
+    "lightbulb-3",
+    "lightbulb-slot"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/install_lightbulb.mp4",
+   "variations": []
+  },
+  "C01": {
+   "site_id": "C01",
+   "name": "Assemble toy block",
+   "skills": [
+    "thin",
+    "clutter",
+    "inhand",
+    "insert",
+    "extrinsic"
+   ],
+   "description": "Components of the block to be assembled, required tools, and bins of screws and nuts are placed in the workspace. Using the tools available, assemble the two halves of the block together with two screws and two nuts.",
+   "success": "The robot movement stops after fully assembling the block with screws tightened and placing the assembled block onto the table. The robot should not remain in contact with the block.",
+   "assets": [
+    "toy-assembly-block",
+    "fastener-bin",
+    "screw",
+    "nut",
+    "bolt",
+    "allen-key",
+    "screwdriver",
+    "wrench"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/assemble_toy_block.mp4",
+   "variations": []
+  },
+  "C02": {
+   "site_id": "C02",
+   "name": "Add keys to keyring",
+   "skills": [
+    "thin",
+    "insert"
+   ],
+   "description": "A keyring and several keys are scattered around the workspace. Add all loose keys onto the keyring.",
+   "success": "The robot movement stops after adding all loose keys to the keyring and placing the chained keys onto the table. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "key-1",
+    "key-2",
+    "key-3",
+    "key-fob",
+    "keyring"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/add_keys_to_keyring.mp4",
+   "variations": []
+  },
+  "C03": {
+   "site_id": "C03",
+   "name": "Unlock and open door",
+   "skills": [
+    "thin",
+    "clutter",
+    "inhand",
+    "insert",
+    "artic"
+   ],
+   "description": "A set of keys on a hanging board and a locked door are placed in the workspace. Retrieve the keys from the hanging board, use the correct key to unlock the door, then turn the doorknob to open the door.",
+   "success": "The door is opened by at least 5 degrees, such that it is visually obvious that the door has been unlocked.",
+   "assets": [
+    "key-1",
+    "key-2",
+    "key-3",
+    "key-fob",
+    "keyring",
+    "hanging-board",
+    "lock-module",
+    "doorknob-module",
+    "door"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/unlock_and_open_door_sequence.mp4",
+   "variations": []
+  },
+  "C04": {
+   "site_id": "C04",
+   "name": "Sort utensils",
+   "skills": [
+    "thin",
+    "multi",
+    "clutter",
+    "place"
+   ],
+   "description": "A tight pile of mixed utensils is placed in the workspace or a storage bin in the workspace. Sort the utensils and place different types of utensils into their corresponding storage bins. Being able to hold multiple utensils simultaneously will greatly increase task completion efficiency.",
+   "success": "The robot movement stops after sorting every utensil in the pile into its corresponding bin. Only utensils of the same type should be in the same bin. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "chopstick",
+    "fork",
+    "knife",
+    "spoon",
+    "utensil-bin-horizontal",
+    "utensil-bin-vertical"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/sort_utensils.mp4",
+   "variations": []
+  },
+  "C05": {
+   "site_id": "C05",
+   "name": "Sort fasteners",
+   "skills": [
+    "thin",
+    "multi",
+    "clutter",
+    "place"
+   ],
+   "description": "A tight pile of mixed fasteners is placed in the workspace or a storage bin in the workspace. Sort the fasteners and place different types of fasteners into their corresponding storage bins. Being able to hold multiple fasteners simultaneously will greatly increase task completion efficiency.",
+   "success": "The robot movement stops after sorting every fastener in the pile into its corresponding bin. Only fasteners of the same type should be in the same bin. The robot should not remain in contact with the task objects.",
+   "assets": [
+    "screw",
+    "nut",
+    "bolt",
+    "fastener-bin"
+   ],
+   "video": "https://jingyi-xiang.github.io/contactbench/website_assets/videos/tasks/sort_screws_and_nuts.mp4",
+   "variations": []
+  }
+ }
+}

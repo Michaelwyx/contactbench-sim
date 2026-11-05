@@ -1,0 +1,13 @@
+# everything a run writes (videos, logs, verdicts, datasets); regenerate with force-bench
+outputs/
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.ipynb_checkpoints/
+.ruff_cache/
+.pytest_cache/
+# local, optional: GelSight's GPL-3.0 housing CAD (see packages/hydrogel/src/hydrogel/data/gs_mini/PROVENANCE.md)
+packages/hydrogel/src/hydrogel/data/gs_mini/gsmini_shell.obj
+imgui.ini

@@ -1,0 +1,122 @@
+{
+ "units": "m",
+ "frame": "finalized-kit STEP frame (z up), assembly coordinates kept",
+ "source_zip": "STEP-20261015T040134Z-1-001.zip (repo root, sha256 998af1e66c067927175c358ccfb482253b6ec1921fa239c80d5395142babac72)",
+ "tessellation": "cascadio 0.1.1 via final_asset_table/source/convert_step.py (0.01 mm chordal, 0.5 rad angular)",
+ "mesh_cache": "paper-writing/figures/asset-overviews/final_asset_table/mesh_cache",
+ "written_by": "export_kit_parts (2026-10-16 session, for the appendix tool/placing tasks)",
+ "files": {
+  "screw_6_5.stl": {
+   "step_file": "toy_block_with_screw_and_nut.step",
+   "step_sha256": "89f3735187e3bea24559210fa1b702377e4062348c4728b72df38a6052f39026",
+   "part": "screw_6.5_rev",
+   "role": "screw_6.5_rev: 15 mm round head (z 20..27) with a 5.5 x 5.5 mm SQUARE recess 4 mm deep; shank z 3.5..20",
+   "fusion_color_srgb": [
+    90,
+    90,
+    90
+   ],
+   "n_tris": 25762,
+   "watertight": true,
+   "volume_cm3": 2.0243,
+   "bounds_mm": [
+    [
+     17.491,
+     -7.454,
+     3.5
+    ],
+    [
+     32.489,
+     7.546,
+     27.0
+    ]
+   ],
+   "stl_sha256": "a665bd06f0d2a57efdaa239921745c493e4a7d0a894610496f1bc43427d3347f",
+   "stray_faces_dropped": 1
+  },
+  "block_top.stl": {
+   "step_file": "toy_block_with_screw_and_nut.step",
+   "step_sha256": "89f3735187e3bea24559210fa1b702377e4062348c4728b72df38a6052f39026",
+   "part": "top",
+   "role": "toy block top half (80 x 30 mm, z 6..20)",
+   "fusion_color_srgb": [
+    255,
+    255,
+    0
+   ],
+   "n_tris": 820,
+   "watertight": true,
+   "volume_cm3": 21.0121,
+   "bounds_mm": [
+    [
+     -40.0,
+     -15.0,
+     6.0
+    ],
+    [
+     40.0,
+     15.0,
+     20.0
+    ]
+   ],
+   "stl_sha256": "4542b61e98c494714ee4c6ad3cf6b3dd389c3730bcd03c03047d078e04d9cc1c",
+   "stray_faces_dropped": 0
+  },
+  "block_bottom.stl": {
+   "step_file": "toy_block_with_screw_and_nut.step",
+   "step_sha256": "89f3735187e3bea24559210fa1b702377e4062348c4728b72df38a6052f39026",
+   "part": "bottom",
+   "role": "toy block bottom half (80 x 30 mm, z 0..11)",
+   "fusion_color_srgb": [
+    255,
+    255,
+    0
+   ],
+   "n_tris": 1084,
+   "watertight": true,
+   "volume_cm3": 21.4312,
+   "bounds_mm": [
+    [
+     -40.0,
+     -15.0,
+     0.0
+    ],
+    [
+     40.0,
+     15.0,
+     11.0
+    ]
+   ],
+   "stl_sha256": "8bda738ca0b1fbaf76e1f2d886e8a667ed968f826ed4c25e06adde4107f67c46",
+   "stray_faces_dropped": 0
+  },
+  "captive_nut.stl": {
+   "step_file": "toy_block_with_screw_and_nut.step",
+   "step_sha256": "89f3735187e3bea24559210fa1b702377e4062348c4728b72df38a6052f39026",
+   "part": "0.75mm_nut",
+   "role": "0.75mm_nut captive in the block bottom (z 0.5..7.5) the screw threads into",
+   "fusion_color_srgb": [
+    90,
+    90,
+    90
+   ],
+   "n_tris": 5964,
+   "watertight": true,
+   "volume_cm3": 0.9268,
+   "bounds_mm": [
+    [
+     16.188,
+     -7.681,
+     0.5
+    ],
+    [
+     33.776,
+     7.819,
+     7.5
+    ]
+   ],
+   "stl_sha256": "98a3b016d5081398768d1c5e6a3fdbe435912824607101fc4bbf14cb0dd0e714",
+   "stray_faces_dropped": 2
+  }
+ }
+}

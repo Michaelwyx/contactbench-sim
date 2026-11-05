@@ -1,0 +1,98 @@
+{
+ "parameters": {
+  "tab_thick": 6.0,
+  "tab_width": 21.0,
+  "tab_protrusion": 11.4,
+  "tab_hole_spacing": 12.0,
+  "tab_hole_from_end": 7.0,
+  "tab_gap_closed": 25.0,
+  "housing_z": 7.6,
+  "finger_width": 25.8,
+  "finger_depth": 40.0,
+  "base_h": 10.0,
+  "finger_holes": [
+   [
+    5.0,
+    5.0
+   ],
+   [
+    35.0,
+    5.0
+   ]
+  ],
+  "lug_hole": [
+   35.0,
+   40.0
+  ],
+  "housing_clear": 0.8,
+  "pocket_clear": 0.15,
+  "pocket_clear_x": 0.25,
+  "pocket_end_clear": 0.4,
+  "bridge": 4.0,
+  "inner_y": 1.0,
+  "outer_cheek": 5.0,
+  "clamp_half_x": 13.0,
+  "cheek": 5.0,
+  "cheek_clear": 0.1,
+  "cheek_below": 1.0,
+  "m4_clear": 4.5,
+  "m4_nut_af": 7.3,
+  "m4_nut_depth": 3.4,
+  "tab_screw_relief_to_y": 6.0,
+  "edge_fillet": 0.8,
+  "pocket_chamfer": 0.6
+ },
+ "derived": {
+  "tab_inner_y": 12.5,
+  "tab_end_z": 19.0,
+  "tab_hole_z": 12.0,
+  "top_z": 8.4,
+  "pocket_y0": 12.35,
+  "pocket_y1": 18.65,
+  "pocket_bottom_z": 19.4,
+  "z_base": 23.4,
+  "outer_y": 23.65,
+  "cheek_x0": 13.0,
+  "cheek_x1": 18.0,
+  "cheek_z1": 34.4,
+  "finger_tip_z": 146.76,
+  "finger_hole_z": [
+   28.4,
+   28.4
+  ]
+ },
+ "units": "mm",
+ "frame": "FR3 finger frame",
+ "adapter_finray_fr3": {
+  "volume_mm3": 13977.4,
+  "mass_g_petg_100pct": 17.8,
+  "bbox_mm": [
+   [
+    -18.0,
+    1.0,
+    8.4
+   ],
+   [
+    18.0,
+    40.0,
+    34.4
+   ]
+  ]
+ },
+ "adapter_finray_fr3_lug": {
+  "volume_mm3": 17115.6,
+  "mass_g_petg_100pct": 21.7,
+  "bbox_mm": [
+   [
+    -18.0,
+    1.0,
+    8.4
+   ],
+   [
+    18.0,
+    40.0,
+    68.4
+   ]
+  ]
+ }
+}

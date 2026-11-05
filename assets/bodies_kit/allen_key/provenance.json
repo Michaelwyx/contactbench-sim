@@ -1,0 +1,38 @@
+{
+ "units": "m",
+ "frame": "finalized-kit STEP frame (z up), assembly coordinates kept",
+ "source_zip": "STEP-20261015T040134Z-1-001.zip (repo root, sha256 998af1e66c067927175c358ccfb482253b6ec1921fa239c80d5395142babac72)",
+ "tessellation": "cascadio 0.1.1 via final_asset_table/source/convert_step.py (0.01 mm chordal, 0.5 rad angular)",
+ "mesh_cache": "paper-writing/figures/asset-overviews/final_asset_table/mesh_cache",
+ "written_by": "export_kit_parts (2026-10-16 session, for the appendix tool/placing tasks)",
+ "files": {
+  "allen_key.stl": {
+   "step_file": "allen_key.step",
+   "step_sha256": "fb71d666b49ea901150ac7f38b5609a3dc5484fc984155ed416098ed6112e7cd",
+   "part": "allen_key",
+   "role": "L-shaped key, 5 mm square section (small corner fillets), legs 67.5 / 30 mm",
+   "fusion_color_srgb": [
+    0,
+    0,
+    0
+   ],
+   "n_tris": 3266,
+   "watertight": true,
+   "volume_cm3": 2.2044,
+   "bounds_mm": [
+    [
+     -2.5,
+     -2.5,
+     3.0
+    ],
+    [
+     65.0,
+     2.5,
+     33.0
+    ]
+   ],
+   "stl_sha256": "a212b78364ed09f452a7a486bd02c26a09aca8ef7b1ecdaf8eb853ba4b7b09a0",
+   "stray_faces_dropped": 8
+  }
+ }
+}

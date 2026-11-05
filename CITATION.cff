@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the ContactBench 1.0 paper."
+title: "ContactBench 1.0 simulation"
+authors:
+  - family-names: Xiang
+    given-names: Jingyi
+  - family-names: Wang
+    given-names: Yixuan
+  - family-names: Bohg
+    given-names: Jeannette
+  - family-names: Yuan
+    given-names: Wenzhen
+license: MIT
+url: "https://jingyi-xiang.github.io/contactbench"
+preferred-citation:
+  type: article
+  title: "ContactBench 1.0: A Benchmark for Everyday Contact-Rich Robotic Manipulation"
+  authors:
+    - family-names: Xiang
+      given-names: Jingyi
+    - family-names: Wang
+      given-names: Yixuan
+    - family-names: Bohg
+      given-names: Jeannette
+    - family-names: Yuan
+      given-names: Wenzhen
+  year: 2026
+  journal: "arXiv preprint"
+  identifiers:
+    - type: other
+      value: "arXiv:2610.24512"
+  url: "https://arxiv.org/abs/2610.24512"

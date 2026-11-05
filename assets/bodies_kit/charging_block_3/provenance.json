@@ -1,0 +1,36 @@
+{
+ "object": "charging_block_3",
+ "units": "m",
+ "frame": "kit STEP frame: Z up, standing on the prongs, blade midpoint at the origin, prong base plane z = 0",
+ "source": "STEP-20261015T040134Z-1-001.zip -> charging_block_3.step (sha256 3e37667a5206ff8e9c88d7b3556a66ca7879a1006afa4868083af5291c3f9a26)",
+ "tessellation": {
+  "tol_linear_mm": 0.01,
+  "tol_angular_rad": 0.5,
+  "tool": "cascadio step_to_glb (final_asset_table/source/convert_step.py)"
+ },
+ "kept": "largest connected body",
+ "watertight": true,
+ "faces": 15476,
+ "bounds_m": [
+  [
+   -0.0425,
+   -0.0175,
+   -0.016
+  ],
+  [
+   0.0125,
+   0.0175,
+   0.0265
+  ]
+ ],
+ "volume_cm3": 43.273,
+ "center_of_mass_m": [
+  -0.012349,
+  4e-06,
+  0.013604
+ ],
+ "sim_mass_kg": 0.06,
+ "sim_mass_rule": "suite plug's 60 g (kit block 3) scaled by printed volume",
+ "stl_sha256": "8182a8a4e19ac2841cbed78c52c74fecd94cd00e30a488eb8de0edf600d186bb",
+ "used_by": "force_bench.appendix_tasks.plug_in_charger_blocks"
+}

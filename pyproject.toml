@@ -1,0 +1,12 @@
+# Repository-level tooling only.  The installable packages live in packages/:
+#   pip install -e packages/hydrogel -e "packages/force-bench[hydrogel,teleop]"
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+extend-exclude = ["docs"]
+
+[tool.ruff.lint]
+select = ["E9", "F63", "F7", "F82"]   # syntax errors and undefined names only
+
+[tool.pytest.ini_options]
+testpaths = ["packages/hydrogel/tests", "packages/force-bench/tests"]

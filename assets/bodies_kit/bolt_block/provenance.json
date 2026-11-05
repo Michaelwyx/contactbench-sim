@@ -1,0 +1,122 @@
+{
+ "units": "m",
+ "frame": "finalized-kit STEP frame (z up), assembly coordinates kept",
+ "source_zip": "STEP-20261015T040134Z-1-001.zip (repo root, sha256 998af1e66c067927175c358ccfb482253b6ec1921fa239c80d5395142babac72)",
+ "tessellation": "cascadio 0.1.1 via final_asset_table/source/convert_step.py (0.01 mm chordal, 0.5 rad angular)",
+ "mesh_cache": "paper-writing/figures/asset-overviews/final_asset_table/mesh_cache",
+ "written_by": "export_kit_parts (2026-10-16 session, for the appendix tool/placing tasks)",
+ "files": {
+  "bolt.stl": {
+   "step_file": "toy_block_with_bolt.step",
+   "step_sha256": "96eaef2ec5ac53478cb83c8cf544d05c71ace8ab8be3676a3057650d2488125e",
+   "part": "0.75mm_screw (1) (1) (1)",
+   "role": "0.75mm_screw: hex head captive in the block bottom (z 0.5..), threaded shaft up to z 43.45 (protrudes 23.45 mm above the block top z 20)",
+   "fusion_color_srgb": [
+    90,
+    90,
+    90
+   ],
+   "n_tris": 28596,
+   "watertight": true,
+   "volume_cm3": 3.7325,
+   "bounds_mm": [
+    [
+     -33.794,
+     -7.75,
+     0.5
+    ],
+    [
+     -16.206,
+     7.75,
+     43.45
+    ]
+   ],
+   "stl_sha256": "0a06e1bc3f6128176c53cb60b6ce009837b5cb5ce37c856b4bfaca2458adbaef",
+   "stray_faces_dropped": 1
+  },
+  "block_top.stl": {
+   "step_file": "toy_block_with_bolt.step",
+   "step_sha256": "96eaef2ec5ac53478cb83c8cf544d05c71ace8ab8be3676a3057650d2488125e",
+   "part": "top",
+   "role": "toy block top half (80 x 30 mm, z 6..20)",
+   "fusion_color_srgb": [
+    255,
+    255,
+    0
+   ],
+   "n_tris": 820,
+   "watertight": true,
+   "volume_cm3": 21.0121,
+   "bounds_mm": [
+    [
+     -40.0,
+     -15.0,
+     6.0
+    ],
+    [
+     40.0,
+     15.0,
+     20.0
+    ]
+   ],
+   "stl_sha256": "4542b61e98c494714ee4c6ad3cf6b3dd389c3730bcd03c03047d078e04d9cc1c",
+   "stray_faces_dropped": 0
+  },
+  "block_bottom.stl": {
+   "step_file": "toy_block_with_bolt.step",
+   "step_sha256": "96eaef2ec5ac53478cb83c8cf544d05c71ace8ab8be3676a3057650d2488125e",
+   "part": "bottom",
+   "role": "toy block bottom half (80 x 30 mm, z 0..11)",
+   "fusion_color_srgb": [
+    255,
+    255,
+    0
+   ],
+   "n_tris": 1084,
+   "watertight": true,
+   "volume_cm3": 21.4312,
+   "bounds_mm": [
+    [
+     -40.0,
+     -15.0,
+     0.0
+    ],
+    [
+     40.0,
+     15.0,
+     11.0
+    ]
+   ],
+   "stl_sha256": "8bda738ca0b1fbaf76e1f2d886e8a667ed968f826ed4c25e06adde4107f67c46",
+   "stray_faces_dropped": 0
+  },
+  "nut.stl": {
+   "step_file": "nut.step",
+   "step_sha256": "c42864b85b805e1303c01dce92cbfd2a0a590aca5eba9f8fde059e6a6e49a98f",
+   "part": "0.75mm_nut",
+   "role": "0.75mm_nut: 15.5 mm across flats, 7.01 mm thick (nut.step frame: z -7.01..0)",
+   "fusion_color_srgb": [
+    90,
+    90,
+    90
+   ],
+   "n_tris": 8796,
+   "watertight": true,
+   "volume_cm3": 0.9297,
+   "bounds_mm": [
+    [
+     -8.794,
+     -7.75,
+     -7.01
+    ],
+    [
+     8.794,
+     7.75,
+     0.013
+    ]
+   ],
+   "stl_sha256": "2c724514746794b5458726c5947bc6c33b10a5d33071f5a24b738aea5b4124f2",
+   "stray_faces_dropped": 2
+  }
+ }
+}

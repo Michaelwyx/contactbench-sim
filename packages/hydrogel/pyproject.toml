@@ -1,0 +1,50 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hydrogel"
+version = "0.1.0"
+description = "Hydroelastic GelSight Mini simulation for NVIDIA Newton: pressure, displacement and shear maps from the dense contact surface, rendered with Taxim."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Yixuan Wang", email = "wangyixu21@gmail.com" }]
+keywords = ["tactile", "gelsight", "hydroelastic", "simulation", "newton", "warp", "robotics"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "newton==1.5.0",          # pinned: hydrogel patches a MuJoCo-Warp kernel of this exact release
+    "warp-lang==1.16.0",
+    "mujoco-warp==3.11.0",
+    "mujoco==3.11.0",
+    "numpy>=2.0",
+    "scipy>=1.14",
+    "trimesh>=4.0",
+    "imageio>=2.35",
+    "imageio-ffmpeg>=0.5",
+    "matplotlib>=3.9",
+    "pillow>=10",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+hydrogel = "hydrogel.cli:main"
+
+[project.urls]
+Homepage = "https://jingyi-xiang.github.io/contactbench"
+Repository = "https://github.com/Michaelwyx/contactbench-sim"
+Paper = "https://arxiv.org/abs/2610.24512"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hydrogel"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/hydrogel", "tests", "README.md"]

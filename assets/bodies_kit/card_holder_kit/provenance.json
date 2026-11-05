@@ -1,0 +1,318 @@
+{
+ "units": "m",
+ "frame": "finalized-kit STEP frame (z up), assembly coordinates kept",
+ "source_zip": "STEP-20261015T040134Z-1-001.zip (repo root, sha256 998af1e66c067927175c358ccfb482253b6ec1921fa239c80d5395142babac72)",
+ "tessellation": "cascadio 0.1.1 via final_asset_table/source/convert_step.py (0.01 mm chordal, 0.5 rad angular)",
+ "mesh_cache": "paper-writing/figures/asset-overviews/final_asset_table/mesh_cache",
+ "written_by": "export_kit_parts (2026-10-16 session, for the appendix tool/placing tasks)",
+ "files": {
+  "holder.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "holder",
+   "role": "card holder (black), 50 x 90.5 mm, z 0..37",
+   "fusion_color_srgb": [
+    0,
+    0,
+    0
+   ],
+   "n_tris": 10328,
+   "watertight": true,
+   "volume_cm3": 15.9758,
+   "bounds_mm": [
+    [
+     -25.0,
+     -45.25,
+     -0.0
+    ],
+    [
+     25.0,
+     45.25,
+     37.0
+    ]
+   ],
+   "stl_sha256": "371459a99bb7296521a90e3aaefc2650d77c47e8d70bccc302c090f1adcac2cd",
+   "stray_faces_dropped": 0
+  },
+  "card_1.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "card_9",
+   "role": "card 1.2 x 85 x 55 mm in the holder slot",
+   "fusion_color_srgb": [
+    156,
+    156,
+    2
+   ],
+   "n_tris": 236,
+   "watertight": true,
+   "volume_cm3": 5.6007,
+   "bounds_mm": [
+    [
+     -5.0,
+     -41.75,
+     2.5
+    ],
+    [
+     -3.8,
+     43.25,
+     57.5
+    ]
+   ],
+   "stl_sha256": "c543386959d3ba681cc5a4aaf556c8b11f9dbe4d6d4aa510cb6bf73f9fd51c4a",
+   "stray_faces_dropped": 0
+  },
+  "card_2.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "card_8",
+   "role": "card 1.2 x 85 x 55 mm in the holder slot",
+   "fusion_color_srgb": [
+    156,
+    156,
+    2
+   ],
+   "n_tris": 236,
+   "watertight": true,
+   "volume_cm3": 5.6007,
+   "bounds_mm": [
+    [
+     -3.8,
+     -41.75,
+     2.5
+    ],
+    [
+     -2.6,
+     43.25,
+     57.5
+    ]
+   ],
+   "stl_sha256": "d0e7eff802956b61f17ff433b6e75c620a9ced8df327d1e26be896254755c516",
+   "stray_faces_dropped": 0
+  },
+  "card_3.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "card_7",
+   "role": "card 1.2 x 85 x 55 mm in the holder slot",
+   "fusion_color_srgb": [
+    156,
+    156,
+    2
+   ],
+   "n_tris": 236,
+   "watertight": true,
+   "volume_cm3": 5.6007,
+   "bounds_mm": [
+    [
+     -2.6,
+     -41.75,
+     2.5
+    ],
+    [
+     -1.4,
+     43.25,
+     57.5
+    ]
+   ],
+   "stl_sha256": "ab8e9fe829b1cc13bee64056b28759eae132c25e40383bb520b4fed1ff470506",
+   "stray_faces_dropped": 0
+  },
+  "card_4.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "card_6",
+   "role": "card 1.2 x 85 x 55 mm in the holder slot",
+   "fusion_color_srgb": [
+    156,
+    156,
+    2
+   ],
+   "n_tris": 236,
+   "watertight": true,
+   "volume_cm3": 5.6007,
+   "bounds_mm": [
+    [
+     -1.4,
+     -41.75,
+     2.5
+    ],
+    [
+     -0.2,
+     43.25,
+     57.5
+    ]
+   ],
+   "stl_sha256": "ff1ea01f7e0a5d702f90e5dd52652188d14596f709df77bb42d3da708d861228",
+   "stray_faces_dropped": 0
+  },
+  "card_5.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "card_5",
+   "role": "card 1.2 x 85 x 55 mm in the holder slot",
+   "fusion_color_srgb": [
+    156,
+    156,
+    2
+   ],
+   "n_tris": 236,
+   "watertight": true,
+   "volume_cm3": 5.6007,
+   "bounds_mm": [
+    [
+     -0.2,
+     -41.75,
+     2.5
+    ],
+    [
+     1.0,
+     43.25,
+     57.5
+    ]
+   ],
+   "stl_sha256": "01e401472c7af2931f9c4b508a399b7a8e08628c771162f442c99dae9cb1b3ca",
+   "stray_faces_dropped": 0
+  },
+  "card_6.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "card_4",
+   "role": "card 1.2 x 85 x 55 mm in the holder slot",
+   "fusion_color_srgb": [
+    156,
+    156,
+    2
+   ],
+   "n_tris": 236,
+   "watertight": true,
+   "volume_cm3": 5.6007,
+   "bounds_mm": [
+    [
+     1.0,
+     -41.75,
+     2.5
+    ],
+    [
+     2.2,
+     43.25,
+     57.5
+    ]
+   ],
+   "stl_sha256": "d6b31226dd612c870c7373786b41746d2b1147586b057ebc55fe819cdf886668",
+   "stray_faces_dropped": 0
+  },
+  "card_7.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "card_3",
+   "role": "card 1.2 x 85 x 55 mm in the holder slot",
+   "fusion_color_srgb": [
+    156,
+    156,
+    2
+   ],
+   "n_tris": 236,
+   "watertight": true,
+   "volume_cm3": 5.6007,
+   "bounds_mm": [
+    [
+     2.2,
+     -41.75,
+     2.5
+    ],
+    [
+     3.4,
+     43.25,
+     57.5
+    ]
+   ],
+   "stl_sha256": "1b7861b00abfe0cdfcf9a3cabe252c6f8a406ab74e2cbe9c7e17c9ff59626447",
+   "stray_faces_dropped": 0
+  },
+  "card_8.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "card_2",
+   "role": "card 1.2 x 85 x 55 mm in the holder slot",
+   "fusion_color_srgb": [
+    156,
+    156,
+    2
+   ],
+   "n_tris": 236,
+   "watertight": true,
+   "volume_cm3": 5.6007,
+   "bounds_mm": [
+    [
+     3.4,
+     -41.75,
+     2.5
+    ],
+    [
+     4.6,
+     43.25,
+     57.5
+    ]
+   ],
+   "stl_sha256": "a2a0e443aa4328005d308f5c6eb1c493749c47cd1116c8a687d545043005c0c5",
+   "stray_faces_dropped": 0
+  },
+  "card_9.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "card_1",
+   "role": "card 1.2 x 85 x 55 mm in the holder slot",
+   "fusion_color_srgb": [
+    156,
+    156,
+    2
+   ],
+   "n_tris": 236,
+   "watertight": true,
+   "volume_cm3": 5.6007,
+   "bounds_mm": [
+    [
+     4.6,
+     -41.75,
+     2.5
+    ],
+    [
+     5.8,
+     43.25,
+     57.5
+    ]
+   ],
+   "stl_sha256": "cb73c14226561ac50b6d3c4f5d2123a11a21ceac1cdbcd6bffaf2b6b9948c364",
+   "stray_faces_dropped": 0
+  },
+  "card_10.stl": {
+   "step_file": "cards_and_holder.step",
+   "step_sha256": "813914c36662aaa1fc9203a2a49180a968e907632d4ef30dfb0eafb94ca35430",
+   "part": "card",
+   "role": "card 1.2 x 85 x 55 mm in the holder slot",
+   "fusion_color_srgb": [
+    156,
+    156,
+    2
+   ],
+   "n_tris": 236,
+   "watertight": true,
+   "volume_cm3": 5.6007,
+   "bounds_mm": [
+    [
+     5.8,
+     -41.75,
+     2.5
+    ],
+    [
+     7.0,
+     43.25,
+     57.5
+    ]
+   ],
+   "stl_sha256": "25ab9afab9a7e8d69e3705f5b019344f6725de4f0d9db40ad84e890a7dd31b0c",
+   "stray_faces_dropped": 0
+  }
+ }
+}

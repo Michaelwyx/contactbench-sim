@@ -1,0 +1,110 @@
+{
+ "units": "m",
+ "frame": "STEP (Z-up), assembly coordinates kept",
+ "source_zip": "STEP-20261015T040134Z-1-001.zip (repo root, sha256 998af1e66c067927175c358ccfb482253b6ec1921fa239c80d5395142babac72)",
+ "tessellation": "cascadio 0.1.1 via final_asset_table/source/convert_step.py (0.01 mm chordal, 0.5 rad angular)",
+ "mesh_cache": "paper-writing/figures/asset-overviews/final_asset_table/mesh_cache",
+ "used_by": "force_bench.appendix_tasks.plug_in_usb (appendix task 27, Plug in USB)",
+ "files": {
+  "spring_right.stl": {
+   "step_file": "usb_slot.step",
+   "step_sha256": "0ed8bb95ceeeb155af242758763c4efe260b8e2f4d9f1c04a81522cc2e5917d6",
+   "part": "spring right",
+   "fusion_color_srgb": [
+    235,
+    235,
+    229
+   ],
+   "n_tris": 2052,
+   "watertight": true,
+   "bounds_mm": [
+    [
+     -22.0,
+     5.5,
+     -2.25
+    ],
+    [
+     -1.15,
+     26.0,
+     2.525
+    ]
+   ],
+   "stl_sha256": "f6106a81699fb3b9c9d58f853424ea1013f160828421e7ef121b266de5cac6b2"
+  },
+  "center.stl": {
+   "step_file": "usb_slot.step",
+   "step_sha256": "0ed8bb95ceeeb155af242758763c4efe260b8e2f4d9f1c04a81522cc2e5917d6",
+   "part": "center",
+   "fusion_color_srgb": [
+    235,
+    235,
+    229
+   ],
+   "n_tris": 336,
+   "watertight": true,
+   "bounds_mm": [
+    [
+     -22.0,
+     -5.075,
+     -14.0
+    ],
+    [
+     -1.5,
+     5.075,
+     1.535
+    ]
+   ],
+   "stl_sha256": "9c6e9a43ca45ed6343eb0bf3a61b779cce53c419a58764188a5efeccdd498560"
+  },
+  "spring_left.stl": {
+   "step_file": "usb_slot.step",
+   "step_sha256": "0ed8bb95ceeeb155af242758763c4efe260b8e2f4d9f1c04a81522cc2e5917d6",
+   "part": "spring left",
+   "fusion_color_srgb": [
+    235,
+    235,
+    229
+   ],
+   "n_tris": 2052,
+   "watertight": true,
+   "bounds_mm": [
+    [
+     -22.0,
+     -26.0,
+     -2.25
+    ],
+    [
+     -1.15,
+     -5.5,
+     2.525
+    ]
+   ],
+   "stl_sha256": "33407d8e8a652ad4771436ac3683645fbdc9e56776c2666b248cf9a76ff15ca6"
+  },
+  "shell.stl": {
+   "step_file": "usb_slot.step",
+   "step_sha256": "0ed8bb95ceeeb155af242758763c4efe260b8e2f4d9f1c04a81522cc2e5917d6",
+   "part": "shell",
+   "fusion_color_srgb": [
+    235,
+    235,
+    229
+   ],
+   "n_tris": 3884,
+   "watertight": true,
+   "bounds_mm": [
+    [
+     -22.0,
+     -26.0,
+     -14.0
+    ],
+    [
+     0.0,
+     26.0,
+     14.0
+    ]
+   ],
+   "stl_sha256": "8e81d1e07ac1d7dc9dff7ee24ec3fbcc884106033142a6bc6377da3fc400e928"
+  }
+ }
+}

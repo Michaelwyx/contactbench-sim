@@ -1,0 +1,64 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "force-bench"
+version = "1.0.0"
+description = "ContactBench 1.0 simulation: the contact-rich benchmark tasks and 3D-printable assets in NVIDIA Newton + MuJoCo Warp, with scripted policies, success checks, teleoperation and GelSight tactile sensing."
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [{ name = "Yixuan Wang", email = "wangyixu21@gmail.com" }]
+keywords = ["robotics", "manipulation", "benchmark", "simulation", "newton", "mujoco", "tactile"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "newton==1.5.0",          # pinned: hydrogel patches a MuJoCo-Warp kernel of this exact release
+    "warp-lang==1.16.0",
+    "mujoco-warp==3.11.0",
+    "mujoco==3.11.0",
+    "numpy>=2.0",
+    "trimesh>=4.0",
+    "pyyaml>=6",
+    "imageio>=2.35",
+    "imageio-ffmpeg>=0.5",
+    "matplotlib>=3.9",
+    "pillow>=10",
+    "GitPython>=3.1",          # newton.utils.download_asset fetches the FR3 description (first run, then cached)
+    "pycollada>=0.8",          # the FR3 visual meshes are COLLADA (.dae)
+    "rtree>=1.0",              # trimesh spatial queries (proximity, penetration audits, card geometry)
+    "shapely>=2.0",            # trimesh sections / 2-D outlines
+    "networkx>=3.0",           # trimesh connectivity (mesh splitting)
+    "scipy>=1.14",
+]
+
+[project.optional-dependencies]
+# the GelSight bridge: TB_GELSIGHT=1 mounts GelSight Mini pads on the tasks that support them
+hydrogel = ["hydrogel"]
+# force-bench kit export-usd and force_bench.kit.usd.add_asset_usd (kit assets as USD stages for Newton; Newton's
+# USD importer needs its schemas: 0.4.1 is the release newton 1.5.0 was built against)
+usd = ["usd-core>=24", "newton-usd-schemas==0.4.1"]
+# force-bench teleop-ui: the Newton GL window (pyglet + imgui, newton's own
+# viewer deps) and the browser page's WebSocket server
+teleop = ["pyglet>=2.1.6,<3", "imgui-bundle>=1.92", "websockets>=12"]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[project.scripts]
+force-bench = "force_bench.cli:main"
+
+[project.urls]
+Homepage = "https://jingyi-xiang.github.io/contactbench"
+Repository = "https://github.com/Michaelwyx/contactbench-sim"
+Paper = "https://arxiv.org/abs/2610.24512"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/force_bench"]
+
+[tool.hatch.build.targets.sdist]
+include = ["src/force_bench", "README.md"]

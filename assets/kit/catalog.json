@@ -1,0 +1,3452 @@
+{
+ "source": "https://jingyi-xiang.github.io/contactbench/assets.html",
+ "config": "config/asset-page.js",
+ "config_sha256": "a68d0cb518b49c0412bda3a553318dcbfe0e0b35f99cffa5e27193748ac783f4",
+ "imported": "2026-10-28",
+ "units": "mm",
+ "up": "+z",
+ "colors": {
+  "white": [
+   246,
+   246,
+   243
+  ],
+  "yellow": [
+   255,
+   255,
+   0
+  ],
+  "gray": [
+   120,
+   120,
+   120
+  ],
+  "black": [
+   45,
+   45,
+   45
+  ]
+ },
+ "assets": {
+  "bottle-1": {
+   "name": "Bottle 1",
+   "note": "",
+   "site": "assets.html#bottle-1",
+   "groups": [
+    {
+     "variation": "Amount of rotation to tighten",
+     "slot": null,
+     "variants": [
+      {
+       "label": "2 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_1_2_rev",
+         "file": "bottle-1/bottle_1_2_rev.stl",
+         "sha256": "fcaf469005c4dadcc3c3edd0233f92e9588365a72ed69483bd9d7705b2c8eaa1",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_1_2_rev",
+         "file": "bottle-1/cap_1_2_rev.stl",
+         "sha256": "20df4fc1e6869703de8615f6a27545dc3236a3550543e74af1f3957758ad5c9d",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "2.5 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_1_2.5_rev",
+         "file": "bottle-1/bottle_1_2.5_rev.stl",
+         "sha256": "94ab89eb3b54dfca71486987d688fa31a69602b245ccf9ed3c5ed3141d995e88",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_1_2.5_rev",
+         "file": "bottle-1/cap_1_2.5_rev.stl",
+         "sha256": "448f636134f12a1d125c7efac1bf23b5be8f240f12a8f8b0a797449f21f2c9f0",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "3 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_1_3_rev",
+         "file": "bottle-1/bottle_1_3_rev.stl",
+         "sha256": "28931a308569b498dfa5e49697988f802c8e1acaec6ab3db94506947463a60a1",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_1_3_rev",
+         "file": "bottle-1/cap_1_3_rev.stl",
+         "sha256": "774187806b402881ad3775548b41b9f1806781f1ab9adfb99fb1625054d675ec",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "3.5 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_1_3.5_rev",
+         "file": "bottle-1/bottle_1_3.5_rev.stl",
+         "sha256": "ecdfc0df33bccb98448d355f568661180da2582951a4c9767689e7f9ce2d42e3",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_1_3.5_rev",
+         "file": "bottle-1/cap_1_3.5_rev.stl",
+         "sha256": "ad09d07410710cea9426455f8a2ddf5a60dc79f110320e859ba6b2d539a277db",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "4 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_1_4_rev",
+         "file": "bottle-1/bottle_1_4_rev.stl",
+         "sha256": "88a127d8537b2e468ff0610b4a5f9be1e4a9498149f229681327474d66309d7e",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_1_4_rev",
+         "file": "bottle-1/cap_1_4_rev.stl",
+         "sha256": "9a99e2c0e810725666c02d7299bf7829873209f44363ab8ecc407deb1cccb3ee",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "bottle-2": {
+   "name": "Bottle 2",
+   "note": "",
+   "site": "assets.html#bottle-2",
+   "groups": [
+    {
+     "variation": "Amount of rotation to tighten",
+     "slot": null,
+     "variants": [
+      {
+       "label": "2 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_2_2_rev",
+         "file": "bottle-2/bottle_2_2_rev.stl",
+         "sha256": "627e7ebae95d2a5896c2809a3f979ba54569661625976aa2a7310e4ad0b6fc45",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_2_2_rev",
+         "file": "bottle-2/cap_2_2_rev.stl",
+         "sha256": "3770c035e1d29daffa8f33828262b9644e6a40433e1c862ec8445ce597b5eaf1",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "2.5 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_2_2.5_rev",
+         "file": "bottle-2/bottle_2_2.5_rev.stl",
+         "sha256": "6eed62fdcc7eaa13d66f1707a019cb0f325d4cae3e706f1f57eb481dc0217067",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_2_2.5_rev",
+         "file": "bottle-2/cap_2_2.5_rev.stl",
+         "sha256": "a9001dab4ef895be842d316a45adb4a345927fbfd5fde8d05363593af9b9e654",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "3 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_2_3_rev",
+         "file": "bottle-2/bottle_2_3_rev.stl",
+         "sha256": "24d4f9809f9611117ef09976cdc2f28fcab8f2561ab0031d17e0a833566cb2e2",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_2_3_rev",
+         "file": "bottle-2/cap_2_3_rev.stl",
+         "sha256": "4511f29edcd4abdf0d394141acbbd140d9c86d36e6de1f60835180461df22607",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "3.5 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_2_3.5_rev",
+         "file": "bottle-2/bottle_2_3.5_rev.stl",
+         "sha256": "0b4938ae035eef5c078da13171a68b0a9e7ca2cc0906e446769036462e2f80aa",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_2_3.5_rev",
+         "file": "bottle-2/cap_2_3.5_rev.stl",
+         "sha256": "9c920c2d3001ae5d41a9802e3b30cea94024d3f83a16042ddd2df7255c5b7b09",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "4 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_2_4_rev",
+         "file": "bottle-2/bottle_2_4_rev.stl",
+         "sha256": "1d4a45f46404a312d700c4f2350e73999c6647557a5643c1047d8cf1050dd59a",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_2_4_rev",
+         "file": "bottle-2/cap_2_4_rev.stl",
+         "sha256": "64c12120098745a8e0ad36883f3583169c508ecca1ff25bdaed57fa2a5faa8e4",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "bottle-3": {
+   "name": "Bottle 3",
+   "note": "",
+   "site": "assets.html#bottle-3",
+   "groups": [
+    {
+     "variation": "Amount of rotation to tighten",
+     "slot": null,
+     "variants": [
+      {
+       "label": "2 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_3_2_rev",
+         "file": "bottle-3/bottle_3_2_rev.stl",
+         "sha256": "b7776cf0dc2b673f9b8719965c7bd42ab6e66f8042abf8368865fd919d5912e1",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_3_2_rev",
+         "file": "bottle-3/cap_3_2_rev.stl",
+         "sha256": "d9da6478aa6b65bdc113513ae59663ce938d468d22e5dbd48efbe304f8e6ff7b",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "2.5 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_3_2.5_rev",
+         "file": "bottle-3/bottle_3_2.5_rev.stl",
+         "sha256": "e739b566a0af78df115354f7bf779e9fae965b2b5f76252da34d9ee0820e234d",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_3_2.5_rev",
+         "file": "bottle-3/cap_3_2.5_rev.stl",
+         "sha256": "0eed7eab1a179c0dfa01633f3341a8e8be4233f019966f46e1e9c13f4c4dc1fa",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "3 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_3_3_rev",
+         "file": "bottle-3/bottle_3_3_rev.stl",
+         "sha256": "0d7d9b5af6490a2aa963b20d9eba73ffe63199c22318cb4203bb09b57110f437",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_3_3_rev",
+         "file": "bottle-3/cap_3_3_rev.stl",
+         "sha256": "e4e805b31179e68fc25e5eebb0b6163f197073cc48be7100e5f395518881fdb2",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "3.5 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_3_3.5_rev",
+         "file": "bottle-3/bottle_3_3.5_rev.stl",
+         "sha256": "f88c8b458a3057bce0aad41548174b3068c77cb823a907123dfb12cd9299f428",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_3_3.5_rev",
+         "file": "bottle-3/cap_3_3.5_rev.stl",
+         "sha256": "c6ca8b3b6ac2f31c2a66ea507d306f33c97cfff151404a06db19d2f6c7e877f3",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "4 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bottle_3_4_rev",
+         "file": "bottle-3/bottle_3_4_rev.stl",
+         "sha256": "1af8ff08484e57c64b4884438ed9e52271f5b58927cf0288b9e09bcf1891d507",
+         "color": [
+          255,
+          255,
+          0
+         ],
+         "color_name": "yellow"
+        },
+        {
+         "name": "cap_3_4_rev",
+         "file": "bottle-3/cap_3_4_rev.stl",
+         "sha256": "073ffcacc81f42dc408612e4c974c93ea6fb02a9808b58972fd926e5d7cf00a6",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "card": {
+   "name": "Card",
+   "note": "",
+   "site": "assets.html#card",
+   "parts": [
+    {
+     "name": "card",
+     "file": "card/card.stl",
+     "sha256": "ba8c7737b36c3ba977281880137c45aa036a0b9b623845eeea8a101754b02def",
+     "color": [
+      255,
+      255,
+      0
+     ],
+     "color_name": "yellow"
+    }
+   ]
+  },
+  "card-holder": {
+   "name": "Card holder",
+   "note": "",
+   "site": "assets.html#card-holder",
+   "parts": [
+    {
+     "name": "card_holder",
+     "file": "card-holder/card_holder.stl",
+     "sha256": "2b1166b9a3e0c6525132307dbce9517471f0939ee2f6e5920e312f2ddd8f5a95",
+     "color": [
+      45,
+      45,
+      45
+     ],
+     "color_name": "black"
+    }
+   ]
+  },
+  "charging-block-1": {
+   "name": "Charging block 1",
+   "note": "",
+   "site": "assets.html#charging-block-1",
+   "parts": [
+    {
+     "name": "charging_block_1",
+     "file": "charging-block-1/charging_block_1.stl",
+     "sha256": "124b8ae70d16ebaacda5fe4df1ea65498fa126e5ff70cab64c94afc1d07c62dd",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": "white"
+    }
+   ]
+  },
+  "charging-block-2": {
+   "name": "Charging block 2",
+   "note": "",
+   "site": "assets.html#charging-block-2",
+   "parts": [
+    {
+     "name": "charging_block_2",
+     "file": "charging-block-2/charging_block_2.stl",
+     "sha256": "e07cfbeed7e8f40f24058e857eb64a12edd519571694573e8bdd8ddb68e000d0",
+     "color": [
+      45,
+      45,
+      45
+     ],
+     "color_name": "black"
+    }
+   ]
+  },
+  "charging-block-3": {
+   "name": "Charging block 3",
+   "note": "",
+   "site": "assets.html#charging-block-3",
+   "parts": [
+    {
+     "name": "charging_block_3",
+     "file": "charging-block-3/charging_block_3.stl",
+     "sha256": "76ca168d9c049244fa3ffc2777e622b688602a09e636d4705a0552835fe477b7",
+     "color": [
+      45,
+      45,
+      45
+     ],
+     "color_name": "black"
+    }
+   ]
+  },
+  "charging-block-4": {
+   "name": "Charging block 4",
+   "note": "",
+   "site": "assets.html#charging-block-4",
+   "parts": [
+    {
+     "name": "charging_block_4",
+     "file": "charging-block-4/charging_block_4.stl",
+     "sha256": "0d1f07c8b7014e2bf03d9d881101fe1f6f82816765e3dac59c03182953e75fe6",
+     "color": [
+      45,
+      45,
+      45
+     ],
+     "color_name": "black"
+    }
+   ]
+  },
+  "outlet": {
+   "name": "Outlet",
+   "note": "",
+   "site": "assets.html#outlet",
+   "parts": [
+    {
+     "name": "outlet_shell",
+     "file": "outlet/outlet_shell.stl",
+     "sha256": "0453ce247aba3a5678c92e0f1e039dcbd522c77896e7505a8c488f975c45759c",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": "white"
+    }
+   ],
+   "groups": [
+    {
+     "variation": "Insertion force",
+     "slot": null,
+     "variants": [
+      {
+       "label": "0.4mm indent spring",
+       "default": false,
+       "parts": [
+        {
+         "name": "outlet_spring_0.4mm_indent",
+         "file": "outlet/outlet_spring_0.4mm_indent.stl",
+         "sha256": "b6acc53ca3bdd4e5fb2ea4b6a0ced25542e53c2941a4c8ad9a602cf7e63b6569",
+         "color": [
+          246,
+          246,
+          243
+         ],
+         "color_name": "white"
+        }
+       ]
+      },
+      {
+       "label": "0.7mm indent spring",
+       "default": false,
+       "parts": [
+        {
+         "name": "outlet_spring_0.7mm_indent",
+         "file": "outlet/outlet_spring_0.7mm_indent.stl",
+         "sha256": "f55e13e31ebe7a2a650aecab2d0fdef9b5eb17287d31efe54d11d1ee8f943831",
+         "color": [
+          246,
+          246,
+          243
+         ],
+         "color_name": "white"
+        }
+       ]
+      },
+      {
+       "label": "0.85mm indent spring",
+       "default": false,
+       "parts": [
+        {
+         "name": "outlet_spring_0.85mm_indent",
+         "file": "outlet/outlet_spring_0.85mm_indent.stl",
+         "sha256": "512cdb84eb242c921754e05f55259a930460ed137e21fa36c72df71be8b0517c",
+         "color": [
+          246,
+          246,
+          243
+         ],
+         "color_name": "white"
+        }
+       ]
+      },
+      {
+       "label": "1mm indent spring",
+       "default": false,
+       "parts": [
+        {
+         "name": "outlet_spring_1mm_indent",
+         "file": "outlet/outlet_spring_1mm_indent.stl",
+         "sha256": "4df7d8f60fe2939b914de5b69c2b21bc12410f6295f9ed6991b4231218d2b299",
+         "color": [
+          246,
+          246,
+          243
+         ],
+         "color_name": "white"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "cup": {
+   "name": "Cup",
+   "note": "",
+   "site": "assets.html#cup",
+   "parts": [
+    {
+     "name": "cup",
+     "file": "cup/cup.stl",
+     "sha256": "9d2fc6cb1f5ae4f15df2facf1f2c960e7221bf5de609c50a4ed55f28a338c2db",
+     "color": [
+      255,
+      255,
+      0
+     ],
+     "color_name": "yellow"
+    }
+   ]
+  },
+  "dial": {
+   "name": "Dial",
+   "note": "",
+   "site": "assets.html#dial",
+   "parts": [
+    {
+     "name": "dial_arrow",
+     "file": "dial/dial_arrow.stl",
+     "sha256": "4457456418fbadc8ace5c688d5db27e2b11343762ed8a7b35d65d22c3e73e273",
+     "color": null,
+     "color_name": null
+    },
+    {
+     "name": "dial_bottom",
+     "file": "dial/dial_bottom.stl",
+     "sha256": "8f54cd38d0f217c465ade164af766977fb9a16f9ff3629104dbaed6644144c8b",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    },
+    {
+     "name": "dial_grid",
+     "file": "dial/dial_grid.stl",
+     "sha256": "e1bddd3f1b478eac70f0eef2605b872218ecfeb3ecc34aa0e036c63ddf3e8be9",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": null
+    },
+    {
+     "name": "dial_spring",
+     "file": "dial/dial_spring.stl",
+     "sha256": "08eee7e1c959c4d9740ef7c7b7e951810c06b57670a16e64a5ab5fc4c2c15634",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    },
+    {
+     "name": "dial_top",
+     "file": "dial/dial_top.stl",
+     "sha256": "f22a97f443e69f0e4948a4e30cf6e5263c3b9fd1f561c17b2e067e4fff355f5e",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    }
+   ],
+   "groups": [
+    {
+     "variation": "Knob geometry",
+     "slot": null,
+     "variants": [
+      {
+       "label": "Flat knob",
+       "default": false,
+       "parts": [
+        {
+         "name": "dial_knob_flat",
+         "file": "dial/dial_knob_flat.stl",
+         "sha256": "db419f351ade58c614e2f45ec524ff346b6e87e48e5cb53739aa6ee72147edb3",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        }
+       ]
+      },
+      {
+       "label": "Round knob",
+       "default": false,
+       "parts": [
+        {
+         "name": "dial_knob_round",
+         "file": "dial/dial_knob_round.stl",
+         "sha256": "97c889725a4eebb11b770da8ab311cd42cef378aee15318b2f6dd235d52ee456",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "dial-push-down-to-turn": {
+   "name": "Dial (push down to turn)",
+   "note": "",
+   "site": "assets.html#dial-push-down-to-turn",
+   "parts": [
+    {
+     "name": "dial_arrow",
+     "file": "dial-push-down-to-turn/dial_arrow.stl",
+     "sha256": "4457456418fbadc8ace5c688d5db27e2b11343762ed8a7b35d65d22c3e73e273",
+     "color": null,
+     "color_name": null
+    },
+    {
+     "name": "dial_push_bottom",
+     "file": "dial-push-down-to-turn/dial_push_bottom.stl",
+     "sha256": "e3a68ca98e2733903ad27ffd22fbb44ff9f2e28b181a6db15ce346112eaf00bc",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    },
+    {
+     "name": "dial_push_grid",
+     "file": "dial-push-down-to-turn/dial_push_grid.stl",
+     "sha256": "05362626da757843278a934b5efc835912b145f758398c8fe982e6c4f2786fe5",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": null
+    },
+    {
+     "name": "dial_push_spring_1",
+     "file": "dial-push-down-to-turn/dial_push_spring_1.stl",
+     "sha256": "5d6357ae257297c027ea9eaf66d63bab9434fc46e06d2b78c6cd593d3f522dd8",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    },
+    {
+     "name": "dial_push_spring_2",
+     "file": "dial-push-down-to-turn/dial_push_spring_2.stl",
+     "sha256": "95f3109eecda5d888927da3faa229abcd46d7bfcd3b20ef6dd890f87f58d5ae2",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    },
+    {
+     "name": "dial_push_top",
+     "file": "dial-push-down-to-turn/dial_push_top.stl",
+     "sha256": "49c5a1a51d4e4147426167ded91baf5481273f2ece06f3d1d3370fec517a5ae7",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    }
+   ],
+   "groups": [
+    {
+     "variation": "Knob geometry",
+     "slot": null,
+     "variants": [
+      {
+       "label": "Flat knob",
+       "default": false,
+       "parts": [
+        {
+         "name": "dial_push_knob_flat",
+         "file": "dial-push-down-to-turn/dial_push_knob_flat.stl",
+         "sha256": "31c391d718ada17b6afd3e11c8d19d8878b7bb734e427713dcd7a27daea0aa02",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        }
+       ]
+      },
+      {
+       "label": "Round knob",
+       "default": false,
+       "parts": [
+        {
+         "name": "dial_push_knob_round",
+         "file": "dial-push-down-to-turn/dial_push_knob_round.stl",
+         "sha256": "57e550f8334250a9fb517ad195e04808efea07ba308562900113954c63949cb6",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "dial-snap-to-position": {
+   "name": "Dial (snap to position)",
+   "note": "",
+   "site": "assets.html#dial-snap-to-position",
+   "parts": [
+    {
+     "name": "dial_arrow",
+     "file": "dial-snap-to-position/dial_arrow.stl",
+     "sha256": "e4c11a4994e9f9eda679a97181da383c235a719894a088cbbe5e7b87be3e4c16",
+     "color": null,
+     "color_name": null
+    },
+    {
+     "name": "dial_snap_bottom",
+     "file": "dial-snap-to-position/dial_snap_bottom.stl",
+     "sha256": "76f792c755583941592af6d997ff0d54bdef201ed70ca9b117bce6f4ca92e173",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    },
+    {
+     "name": "dial_snap_grid",
+     "file": "dial-snap-to-position/dial_snap_grid.stl",
+     "sha256": "ab7ce39a7c60b5deec3e84f5417e76e9db8b4e41c63471fc2328f3190d318ed2",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": null
+    },
+    {
+     "name": "dial_snap_spring",
+     "file": "dial-snap-to-position/dial_snap_spring.stl",
+     "sha256": "98b83635ea496fb8a938f8c9a5e7f268d88ff763ea40beb1e9436c7f8659b3f4",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    },
+    {
+     "name": "dial_snap_top",
+     "file": "dial-snap-to-position/dial_snap_top.stl",
+     "sha256": "fc7854890e64d95646aad92df6492e1a4666c628932a571ae50305bd16492dbc",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    }
+   ],
+   "groups": [
+    {
+     "variation": "Knob geometry",
+     "slot": null,
+     "variants": [
+      {
+       "label": "Flat knob",
+       "default": false,
+       "parts": [
+        {
+         "name": "dial_snap_knob_flat",
+         "file": "dial-snap-to-position/dial_snap_knob_flat.stl",
+         "sha256": "2e4d2aab974852c3ea8f1e3befef40a2b4dc7f762d5c6e54f480451ff3e51a3a",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        }
+       ]
+      },
+      {
+       "label": "Round knob",
+       "default": false,
+       "parts": [
+        {
+         "name": "dial_snap_knob_round",
+         "file": "dial-snap-to-position/dial_snap_knob_round.stl",
+         "sha256": "c050ceb55a3360946926627d31279246e58a0d1f99e59b9197e78bd66034c5f8",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "doorknob-module": {
+   "name": "Doorknob module",
+   "note": "",
+   "site": "assets.html#doorknob-module",
+   "parts": [
+    {
+     "name": "doorknob_module_bottom",
+     "file": "doorknob-module/doorknob_module_bottom.stl",
+     "sha256": "9e496190aed8ad0c9fe5d6d7c4f8bbc686afe0af92b17e0d92291e0609ff7283",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": "white"
+    },
+    {
+     "name": "doorknob_module_top",
+     "file": "doorknob-module/doorknob_module_top.stl",
+     "sha256": "4b7a596f3672c2565158a03cb20e21a4785cb2dbf76df33a1456dd9d549c5355",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": "white"
+    }
+   ],
+   "groups": [
+    {
+     "variation": "Rotation force",
+     "slot": null,
+     "variants": [
+      {
+       "label": "5mm spring",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_module_spring_5mm",
+         "file": "doorknob-module/doorknob_module_spring_5mm.stl",
+         "sha256": "90e09ed5f914ebf7db1e01b3d61355bd48a1e596036f77bfd4499f17bcc3e8d3",
+         "color": [
+          246,
+          246,
+          243
+         ],
+         "color_name": "white"
+        }
+       ]
+      },
+      {
+       "label": "7.5mm spring",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_module_spring_7.5mm",
+         "file": "doorknob-module/doorknob_module_spring_7.5mm.stl",
+         "sha256": "3ad85691866b10cbff82021fd36799a8130d91e3fd6993f8e3745fc3ec153c54",
+         "color": [
+          246,
+          246,
+          243
+         ],
+         "color_name": "white"
+        }
+       ]
+      },
+      {
+       "label": "10mm spring",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_module_spring_10mm",
+         "file": "doorknob-module/doorknob_module_spring_10mm.stl",
+         "sha256": "f0538d6bc4f043a0421383f838d931a67812f0d9752715cb75a5b361e362f21d",
+         "color": [
+          246,
+          246,
+          243
+         ],
+         "color_name": "white"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    },
+    {
+     "variation": "Amount of rotation to unlock",
+     "slot": null,
+     "variants": [
+      {
+       "label": "40\u00b0",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_module_gear_40_deg",
+         "file": "doorknob-module/doorknob_module_gear_40_deg.stl",
+         "sha256": "4941be90e60b864380288e0c2633c38fd874b8f55757ae42caacf8e3d1796975",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        },
+        {
+         "name": "doorknob_module_latch_40_deg",
+         "file": "doorknob-module/doorknob_module_latch_40_deg.stl",
+         "sha256": "398233b6b366570eedabc35ed34a091852af9490177fa2ade4cf72ab4f6b1904",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "48\u00b0",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_module_gear_48_deg",
+         "file": "doorknob-module/doorknob_module_gear_48_deg.stl",
+         "sha256": "345cbac02de9375b8ff58ccb75aa3f5c07decf5b25c37081145510934c8f6a91",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        },
+        {
+         "name": "doorknob_module_latch_48_deg",
+         "file": "doorknob-module/doorknob_module_latch_48_deg.stl",
+         "sha256": "c5358a2f68b86d7b1c24347d86645c556dc9e3ff012ab478037d1b2eec3cae22",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "60\u00b0",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_module_gear_60_deg",
+         "file": "doorknob-module/doorknob_module_gear_60_deg.stl",
+         "sha256": "03d740685278f68a8badf5108a5a874b0b9aff73f7d225e2135c2580e2e024f7",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        },
+        {
+         "name": "doorknob_module_latch_60_deg",
+         "file": "doorknob-module/doorknob_module_latch_60_deg.stl",
+         "sha256": "6e22b78af83f315597b999cff508dd2b56cfaa58b7ab33103edcccb11c2f4d9c",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "72\u00b0",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_module_gear_72_deg",
+         "file": "doorknob-module/doorknob_module_gear_72_deg.stl",
+         "sha256": "5f932c988e6d5c4969a426b9b4230155e511453922823dfd56a1defe9c04364f",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        },
+        {
+         "name": "doorknob_module_latch_72_deg",
+         "file": "doorknob-module/doorknob_module_latch_72_deg.stl",
+         "sha256": "468e3e6530b70d6ca42c9566bbb41b5e40774b01a1d77f2f7eb3950cfd16d1b4",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "80\u00b0",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_module_gear_80_deg",
+         "file": "doorknob-module/doorknob_module_gear_80_deg.stl",
+         "sha256": "9dd433127882b9c0048bc5dbff5932766b52bde8f399f6383b446b0b69b83e43",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        },
+        {
+         "name": "doorknob_module_latch_80_deg",
+         "file": "doorknob-module/doorknob_module_latch_80_deg.stl",
+         "sha256": "a2d1fcaa9eaf5cc88cd394802f13aa3ca61b215c43e79e39c90af87b99c6cbf1",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": [
+      0,
+      0,
+      -0.5
+     ]
+    },
+    {
+     "variation": "Door handle geometry",
+     "slot": "grip",
+     "variants": [
+      {
+       "label": "Handle 1",
+       "default": false,
+       "parts": [
+        {
+         "name": "door_handle_1",
+         "file": "doorknob-module/door_handle_1.stl",
+         "sha256": "448f463600d0956819934acdf9770727a50f641752b1a0fa55650b180e2c089a",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "Handle 2",
+       "default": false,
+       "parts": [
+        {
+         "name": "door_handle_2",
+         "file": "doorknob-module/door_handle_2.stl",
+         "sha256": "e7c963c155e1c6b6a629408e000fe4bca386b8dd5c29036bfd6ef7f6b4061361",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    },
+    {
+     "variation": "Doorknob geometry",
+     "slot": "grip",
+     "variants": [
+      {
+       "label": "Doorknob 1, 60mm diameter",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_1_60mm",
+         "file": "doorknob-module/doorknob_1_60mm.stl",
+         "sha256": "30a5eaf0257d446371e59cca8e70fb1d7629e672ca156caef18601dcb3d59c8b",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "Doorknob 1, 55mm diameter",
+       "default": true,
+       "parts": [
+        {
+         "name": "doorknob_1_55mm",
+         "file": "doorknob-module/doorknob_1_55mm.stl",
+         "sha256": "02973bc68f7bf54528941c1987c560d4794dc41c8f07f4687a0fd7602c1bfce9",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "Doorknob 1, 50mm diameter",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_1_50mm",
+         "file": "doorknob-module/doorknob_1_50mm.stl",
+         "sha256": "4e54ba1e5a125a691144a19cf79a24ba933ab677dfa7b41ddd1fb92a7c2b6280",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "Doorknob 2, 60mm diameter",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_2_60mm",
+         "file": "doorknob-module/doorknob_2_60mm.stl",
+         "sha256": "3f78044b51a0222cccf810309255675813102c9020ad34dbf02c87964f7f7be1",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "Doorknob 2, 55mm diameter",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_2_55mm",
+         "file": "doorknob-module/doorknob_2_55mm.stl",
+         "sha256": "ec519bcaea646df4b8b5372e4628016fc3b44d18b7d89dbaea76dad3b097a747",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "Doorknob 2, 50mm diameter",
+       "default": false,
+       "parts": [
+        {
+         "name": "doorknob_2_50mm",
+         "file": "doorknob-module/doorknob_2_50mm.stl",
+         "sha256": "5b366aaf397b9d4f54047d4f167ad28c8304cb764ec3b9c001e0c61bbc4073b8",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "lock-module": {
+   "name": "Lock module",
+   "note": "Requires key 1",
+   "site": "assets.html#lock-module",
+   "parts": [
+    {
+     "name": "lock_bottom",
+     "file": "lock-module/lock_bottom.stl",
+     "sha256": "2d783b9bbf42f9eb6b3c1c2edec60579583f2355fa708f7305aaa1391ca65225",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": null
+    },
+    {
+     "name": "lock_friction_spring",
+     "file": "lock-module/lock_friction_spring.stl",
+     "sha256": "deeefaf6ebed18414edb89b7e02b8983c9e1e8d71ec7dddbf4436cef4d34b4df",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": null
+    },
+    {
+     "name": "lock_top",
+     "file": "lock-module/lock_top.stl",
+     "sha256": "ecf3d4c367fab69a816b7645d20829b0902756459a1e7ed2736e9a911a2b35e6",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": null
+    }
+   ],
+   "groups": [
+    {
+     "variation": "Amount of rotation to unlock",
+     "slot": null,
+     "variants": [
+      {
+       "label": "90\u00b0",
+       "default": false,
+       "parts": [
+        {
+         "name": "deadbolt_90_deg",
+         "file": "lock-module/deadbolt_90_deg.stl",
+         "sha256": "135e291c778117339727ef0d73109a173b57316fa5b1dbc69a4868ebcca482fa",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        },
+        {
+         "name": "gear_90_deg",
+         "file": "lock-module/gear_90_deg.stl",
+         "sha256": "60efb8ad43d10db956bd5ac73e8403fb4b104f81b93a7999bcaa51c03c63b784",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        }
+       ]
+      },
+      {
+       "label": "180\u00b0",
+       "default": false,
+       "parts": [
+        {
+         "name": "deadbolt_180_deg",
+         "file": "lock-module/deadbolt_180_deg.stl",
+         "sha256": "eaf6a0938b43b228548d1f9bf29114bfc74bc8e6ac043e6c6ba98786e24722ad",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        },
+        {
+         "name": "gear_180_deg",
+         "file": "lock-module/gear_180_deg.stl",
+         "sha256": "b20ae58a86f26e6ab51b9b8fc4114bef6e71391ce2250aec427c2960e148fcea",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        }
+       ]
+      },
+      {
+       "label": "270\u00b0",
+       "default": false,
+       "parts": [
+        {
+         "name": "deadbolt_270_deg",
+         "file": "lock-module/deadbolt_270_deg.stl",
+         "sha256": "1c7388f97558283eebfbc13b2a946adeaa43b116a9a78e48be0d19736de8ec02",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        },
+        {
+         "name": "gear_270_deg",
+         "file": "lock-module/gear_270_deg.stl",
+         "sha256": "630f4322641fbf1db5d02dbb5724022ed338a255c102951cdef3025b30cbcc97",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        }
+       ]
+      },
+      {
+       "label": "360\u00b0",
+       "default": false,
+       "parts": [
+        {
+         "name": "deadbolt_360_deg",
+         "file": "lock-module/deadbolt_360_deg.stl",
+         "sha256": "264d3b2e15ec5baddda9ee7ec5111aeb029d72fa85d7611c3d21173c4503f27a",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        },
+        {
+         "name": "gear_360_deg",
+         "file": "lock-module/gear_360_deg.stl",
+         "sha256": "a37e137f0cbfab017ed39a770023c99de25ec39ffb396bece87f1e841b61b8e9",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": null
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "door": {
+   "name": "Door",
+   "note": "Requires the doorknob and lock modules",
+   "site": "assets.html#door",
+   "parts": [
+    {
+     "name": "door",
+     "file": "door/door.stl",
+     "sha256": "f5b717539ef232db7f3b3352317d2aa5e1b9fd12296957f957992a4e1b48a0f6",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": null
+    },
+    {
+     "name": "door_frame_1",
+     "file": "door/door_frame_1.stl",
+     "sha256": "af7e05efb57d32026ca077ef206b4d66bbc1bd8289c2f738da09b0fc2e538c68",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": null
+    },
+    {
+     "name": "door_frame_2",
+     "file": "door/door_frame_2.stl",
+     "sha256": "b26e0495786d4666fee314921ff045d0f4395c7f7d1863b6b1fcabc329f44410",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": null
+    }
+   ]
+  },
+  "ethernet-plug-and-slot": {
+   "name": "Ethernet plug and slot",
+   "note": "",
+   "site": "assets.html#ethernet-plug-and-slot",
+   "parts": [
+    {
+     "name": "ethernet_plug",
+     "file": "ethernet-plug-and-slot/ethernet_plug.stl",
+     "sha256": "8ebc7b33c8dff659d8a1d61e737a7e2230f21886a5b2f2765abb5ac02f25fac6",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": null
+    },
+    {
+     "name": "ethernet_slot",
+     "file": "ethernet-plug-and-slot/ethernet_slot.stl",
+     "sha256": "0ea9ea5c11c6e3be5840c30e78da63207032b1d54467fc3eff7ac8d16670be97",
+     "color": [
+      160,
+      160,
+      160
+     ],
+     "color_name": null
+    },
+    {
+     "name": "ethernet_slot_shell",
+     "file": "ethernet-plug-and-slot/ethernet_slot_shell.stl",
+     "sha256": "0e9c37a7a8ee5ab890f0c26694b0b8ffe2522b78685e58301929f6693e5a8377",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    }
+   ]
+  },
+  "usb-stick-1": {
+   "name": "USB stick 1",
+   "note": "",
+   "site": "assets.html#usb-stick-1",
+   "parts": [
+    {
+     "name": "usb_1",
+     "file": "usb-stick-1/usb_1.stl",
+     "sha256": "07033660215b4fcb3a809a196f9e26e899ca8d9aff475ffb8099e3b6852b47b6",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "usb-stick-2": {
+   "name": "USB stick 2",
+   "note": "",
+   "site": "assets.html#usb-stick-2",
+   "parts": [
+    {
+     "name": "usb_2",
+     "file": "usb-stick-2/usb_2.stl",
+     "sha256": "225191bea6f1261e15185f517a253252acbd429373351e17826b884c2315907c",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "usb-stick-3": {
+   "name": "USB stick 3",
+   "note": "",
+   "site": "assets.html#usb-stick-3",
+   "parts": [
+    {
+     "name": "usb_3",
+     "file": "usb-stick-3/usb_3.stl",
+     "sha256": "1534132b860debb95b074748734a91c5afd9147d3047d773feea1bf90d034eb2",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "usb-stick-4": {
+   "name": "USB stick 4",
+   "note": "",
+   "site": "assets.html#usb-stick-4",
+   "parts": [
+    {
+     "name": "usb_4",
+     "file": "usb-stick-4/usb_4.stl",
+     "sha256": "15c4d4adc732fd583b764e1ff5a9bf3f357c6a7a1f53d7f5cac81d62656e144b",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "usb-slot": {
+   "name": "USB slot",
+   "note": "",
+   "site": "assets.html#usb-slot",
+   "parts": [
+    {
+     "name": "usb_slot_center",
+     "file": "usb-slot/usb_slot_center.stl",
+     "sha256": "6cffc58e7ae9c08a93c39bc544ba903b3be7c09f2aad9765b281d7eb2d503eb9",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": "white"
+    },
+    {
+     "name": "usb_slot_shell",
+     "file": "usb-slot/usb_slot_shell.stl",
+     "sha256": "3676faf080b437f7c85140614db615aa786e4dc4f178c33e575f03c93516eaa0",
+     "color": [
+      246,
+      246,
+      243
+     ],
+     "color_name": "white"
+    }
+   ],
+   "groups": [
+    {
+     "variation": "Insertion force",
+     "slot": null,
+     "variants": [
+      {
+       "label": "0.2mm indent spring",
+       "default": false,
+       "parts": [
+        {
+         "name": "usb_slot_spring_0.2mm_indent",
+         "file": "usb-slot/usb_slot_spring_0.2mm_indent.stl",
+         "sha256": "626a94455a2e66b64e15fc4a3db795f6285d44a98ac0b9cfd6ed87c72526462e",
+         "color": [
+          246,
+          246,
+          243
+         ],
+         "color_name": "white"
+        }
+       ]
+      },
+      {
+       "label": "0.4mm indent spring",
+       "default": false,
+       "parts": [
+        {
+         "name": "usb_slot_spring_0.4mm_indent",
+         "file": "usb-slot/usb_slot_spring_0.4mm_indent.stl",
+         "sha256": "c5b9de86a6ff469424917b28f77c4faafd2d3783f86516e2fc63ea03218d5639",
+         "color": [
+          246,
+          246,
+          243
+         ],
+         "color_name": "white"
+        }
+       ]
+      },
+      {
+       "label": "0.6mm indent spring",
+       "default": false,
+       "parts": [
+        {
+         "name": "usb_slot_spring_0.6mm_indent",
+         "file": "usb-slot/usb_slot_spring_0.6mm_indent.stl",
+         "sha256": "baf0451d0e24c5deb1129812d07989d3249d3fd5144943db69a59ba3cc598b36",
+         "color": [
+          246,
+          246,
+          243
+         ],
+         "color_name": "white"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "fastener-bin": {
+   "name": "Fastener bin",
+   "note": "",
+   "site": "assets.html#fastener-bin",
+   "parts": [
+    {
+     "name": "fastener_bin",
+     "file": "fastener-bin/fastener_bin.stl",
+     "sha256": "494f57dfbf908c63ff7b5336dbbdaa663cb9ebe48f441c397ee6e77ea64fdb4e",
+     "color": [
+      255,
+      255,
+      0
+     ],
+     "color_name": "yellow"
+    }
+   ]
+  },
+  "hanging-board": {
+   "name": "Hanging board",
+   "note": "",
+   "site": "assets.html#hanging-board",
+   "parts": [
+    {
+     "name": "hanging_board",
+     "file": "hanging-board/hanging_board.stl",
+     "sha256": "2ad34b539fdc761cd183f5a1b663218e3b6e988cc6c4f4f5c419addd3e367117",
+     "color": [
+      255,
+      255,
+      0
+     ],
+     "color_name": "yellow"
+    }
+   ]
+  },
+  "key-1": {
+   "name": "Key 1",
+   "note": "",
+   "site": "assets.html#key-1",
+   "parts": [
+    {
+     "name": "key_1",
+     "file": "key-1/key_1.stl",
+     "sha256": "7757735432f2b2ec08d248cf7f969b10ca7d5b4ef9a2261a772b1cf6091a172d",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "key-2": {
+   "name": "Key 2",
+   "note": "",
+   "site": "assets.html#key-2",
+   "parts": [
+    {
+     "name": "key_2",
+     "file": "key-2/key_2.stl",
+     "sha256": "13ad286b0eae6ec0cc43d7beb4c7a2f3851da81c538bbef56679274706a05100",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "key-3": {
+   "name": "Key 3",
+   "note": "",
+   "site": "assets.html#key-3",
+   "parts": [
+    {
+     "name": "key_3",
+     "file": "key-3/key_3.stl",
+     "sha256": "d90fcddbdb7b2769484feb0de9bb2a53978e3bfd031be4a03e9b0242c0c2439f",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "key-fob": {
+   "name": "Key fob",
+   "note": "",
+   "site": "assets.html#key-fob",
+   "parts": [
+    {
+     "name": "key_fob",
+     "file": "key-fob/key_fob.stl",
+     "sha256": "1f9139cb90391aafd53d86009aee7fb3a6d5c8e8cff6bd7ff6376000f85d1c98",
+     "color": [
+      45,
+      45,
+      45
+     ],
+     "color_name": "black"
+    }
+   ]
+  },
+  "keyring": {
+   "name": "Keyring",
+   "note": "",
+   "site": "assets.html#keyring",
+   "parts": [
+    {
+     "name": "keyring",
+     "file": "keyring/keyring.stl",
+     "sha256": "0e0810e2b7fe54664bbe0db585adf407c03d19e914731c99985ddf4c03e0090e",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "lightbulb-1": {
+   "name": "Lightbulb 1",
+   "note": "",
+   "site": "assets.html#lightbulb-1",
+   "groups": [
+    {
+     "variation": "Lightbulb geometry",
+     "slot": null,
+     "variants": [
+      {
+       "label": "55mm diameter",
+       "default": false
+      },
+      {
+       "label": "60mm diameter",
+       "default": false
+      },
+      {
+       "label": "65mm diameter",
+       "default": false
+      }
+     ],
+     "display_offset_mm": null
+    },
+    {
+     "variation": "Amount of rotation to tighten",
+     "slot": null,
+     "variants": [
+      {
+       "label": "2 revolutions",
+       "default": false
+      },
+      {
+       "label": "2.5 revolutions",
+       "default": false
+      },
+      {
+       "label": "3 revolutions",
+       "default": false
+      },
+      {
+       "label": "3.5 revolutions",
+       "default": false
+      },
+      {
+       "label": "4 revolutions",
+       "default": false
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ],
+   "combinations": [
+    {
+     "variants": [
+      "55mm diameter",
+      "2 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_55mm_2_rev",
+       "file": "lightbulb-1/lightbulb_1_55mm_2_rev.stl",
+       "sha256": "f5d692fff1e86f32f3104c9d2d6da60ca468528f751f817341ff253e0199e76d",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "55mm diameter",
+      "2.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_55mm_2.5_rev",
+       "file": "lightbulb-1/lightbulb_1_55mm_2.5_rev.stl",
+       "sha256": "3c6ddfb2e928a172a20effb568fd764916b6d46c6e9517aa6ad9294b30375ab8",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "55mm diameter",
+      "3 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_55mm_3_rev",
+       "file": "lightbulb-1/lightbulb_1_55mm_3_rev.stl",
+       "sha256": "b44f3dc31a84f77f2ef2d6fe917c93882a3d8b92b7f15a867cae5175b0b08543",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "55mm diameter",
+      "3.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_55mm_3.5_rev",
+       "file": "lightbulb-1/lightbulb_1_55mm_3.5_rev.stl",
+       "sha256": "b3391f09fb2d165099fc0ae3d59167bf4fa105a94853343caa67a7b36820a533",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "55mm diameter",
+      "4 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_55mm_4_rev",
+       "file": "lightbulb-1/lightbulb_1_55mm_4_rev.stl",
+       "sha256": "00e465835012db1abfb4fbd6d60bc62f4c5b932fa413d46cc4b8ce03463c47ec",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "60mm diameter",
+      "2 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_60mm_2_rev",
+       "file": "lightbulb-1/lightbulb_1_60mm_2_rev.stl",
+       "sha256": "89c9b4140e6108a95abbc2956eed1a984e4009e08c2f97ddec350e9385a2dd28",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "60mm diameter",
+      "2.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_60mm_2.5_rev",
+       "file": "lightbulb-1/lightbulb_1_60mm_2.5_rev.stl",
+       "sha256": "c3b98938fee967a5161bdd59842b4d21d85d5e7636b5a4ed0db20d282d1f0573",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "60mm diameter",
+      "3 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_60mm_3_rev",
+       "file": "lightbulb-1/lightbulb_1_60mm_3_rev.stl",
+       "sha256": "9ca8f493eef31def281580a91fec882eef76cc0d3dc5a067da899fb5a3c5e13d",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "60mm diameter",
+      "3.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_60mm_3.5_rev",
+       "file": "lightbulb-1/lightbulb_1_60mm_3.5_rev.stl",
+       "sha256": "3c26e915b6f0a7d9ee7e692b0acba71c9facbfb8da5c22ba750766e280fb4e55",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "60mm diameter",
+      "4 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_60mm_4_rev",
+       "file": "lightbulb-1/lightbulb_1_60mm_4_rev.stl",
+       "sha256": "eee5c5c8dbb736b6c34a6c914cb701ae1fe49ea60292fe943564eda3339bf7f9",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "65mm diameter",
+      "2 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_65mm_2_rev",
+       "file": "lightbulb-1/lightbulb_1_65mm_2_rev.stl",
+       "sha256": "91a90bd04d44e3820c3c76dacc791a982caeb4b19e63728931047685ddccb219",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "65mm diameter",
+      "2.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_65mm_2.5_rev",
+       "file": "lightbulb-1/lightbulb_1_65mm_2.5_rev.stl",
+       "sha256": "22e243ae50f479033efe0a0e20eb8170a63aeaf884bcea2d5d2871eb59a084e5",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "65mm diameter",
+      "3 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_65mm_3_rev",
+       "file": "lightbulb-1/lightbulb_1_65mm_3_rev.stl",
+       "sha256": "df7357cd21f74eb14ab7080d3dd72ec6b6109d18d32373d310bb6078cbd4ebe9",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "65mm diameter",
+      "3.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_65mm_3.5_rev",
+       "file": "lightbulb-1/lightbulb_1_65mm_3.5_rev.stl",
+       "sha256": "2bba7a80a9a56e6beb6b3b8285e12d6e131ad8961475d13f1b469a6f14c4fe36",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "65mm diameter",
+      "4 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_1_65mm_4_rev",
+       "file": "lightbulb-1/lightbulb_1_65mm_4_rev.stl",
+       "sha256": "9db921f04953767c954dd2e5770ae8d661d4f71a7f3a88a4d9ee80fec2f71459",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    }
+   ]
+  },
+  "lightbulb-2": {
+   "name": "Lightbulb 2",
+   "note": "",
+   "site": "assets.html#lightbulb-2",
+   "groups": [
+    {
+     "variation": "Lightbulb geometry",
+     "slot": null,
+     "variants": [
+      {
+       "label": "45mm diameter",
+       "default": false
+      },
+      {
+       "label": "50mm diameter",
+       "default": false
+      },
+      {
+       "label": "55mm diameter",
+       "default": false
+      }
+     ],
+     "display_offset_mm": null
+    },
+    {
+     "variation": "Amount of rotation to tighten",
+     "slot": null,
+     "variants": [
+      {
+       "label": "2 revolutions",
+       "default": false
+      },
+      {
+       "label": "2.5 revolutions",
+       "default": false
+      },
+      {
+       "label": "3 revolutions",
+       "default": false
+      },
+      {
+       "label": "3.5 revolutions",
+       "default": false
+      },
+      {
+       "label": "4 revolutions",
+       "default": false
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ],
+   "combinations": [
+    {
+     "variants": [
+      "45mm diameter",
+      "2 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_45mm_2_rev",
+       "file": "lightbulb-2/lightbulb_2_45mm_2_rev.stl",
+       "sha256": "76d3fd14cb429e08a71115a6630f30768ce4890be335c5ca41f602e4c1409c7b",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "45mm diameter",
+      "2.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_45mm_2.5_rev",
+       "file": "lightbulb-2/lightbulb_2_45mm_2.5_rev.stl",
+       "sha256": "277a96743edff2ddf1a062cb9d417a7d4305f421c7bafb9f7aeee4f1dbdc32e9",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "45mm diameter",
+      "3 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_45mm_3_rev",
+       "file": "lightbulb-2/lightbulb_2_45mm_3_rev.stl",
+       "sha256": "e83d6797155b7db8e055cf788a6b60ddeb57e32f42374bc7dd8988d9878101d2",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "45mm diameter",
+      "3.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_45mm_3.5_rev",
+       "file": "lightbulb-2/lightbulb_2_45mm_3.5_rev.stl",
+       "sha256": "e8afecc30d88ffceb0afbca3f6d1ad80051cf9cd44ef9288b64f340a9d00f5f3",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "45mm diameter",
+      "4 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_45mm_4_rev",
+       "file": "lightbulb-2/lightbulb_2_45mm_4_rev.stl",
+       "sha256": "5f006c97469ff7285466b056e7a1066c4ca4ef1dd5183ab0a0cd8cdfe5d5f95f",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "50mm diameter",
+      "2 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_50mm_2_rev",
+       "file": "lightbulb-2/lightbulb_2_50mm_2_rev.stl",
+       "sha256": "85af56add61dd760cb46cb75e49ea75d93d68486d145c9c535db0a2f09b05e7f",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "50mm diameter",
+      "2.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_50mm_2.5_rev",
+       "file": "lightbulb-2/lightbulb_2_50mm_2.5_rev.stl",
+       "sha256": "1f9009abfd5314752ab4a2ca7d896a165649278c90d70d10c5f4d4f2cb17fd99",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "50mm diameter",
+      "3 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_50mm_3_rev",
+       "file": "lightbulb-2/lightbulb_2_50mm_3_rev.stl",
+       "sha256": "764af82a5f9446c334d0dc90d87a4874c3ad2e57779686a0280d083949df69f5",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "50mm diameter",
+      "3.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_50mm_3.5_rev",
+       "file": "lightbulb-2/lightbulb_2_50mm_3.5_rev.stl",
+       "sha256": "8dcb6f98000807ca6c17390c338132b716c2f8ccb30e7408bc0058dc668f4a7d",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "50mm diameter",
+      "4 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_50mm_4_rev",
+       "file": "lightbulb-2/lightbulb_2_50mm_4_rev.stl",
+       "sha256": "beff3f796e6e0453ca998f876e846f7301994959b6f028ed7cd545196da221c4",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "55mm diameter",
+      "2 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_55mm_2_rev",
+       "file": "lightbulb-2/lightbulb_2_55mm_2_rev.stl",
+       "sha256": "84f34bde3a896074b58a4b79b0b294ea6072ce85bf3f27237134c7976c4a51e5",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "55mm diameter",
+      "2.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_55mm_2.5_rev",
+       "file": "lightbulb-2/lightbulb_2_55mm_2.5_rev.stl",
+       "sha256": "5823a5ea20fd3f727f2ca26ebf32fd26e822f45d96d746e5e4410d7ca7628f44",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "55mm diameter",
+      "3 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_55mm_3_rev",
+       "file": "lightbulb-2/lightbulb_2_55mm_3_rev.stl",
+       "sha256": "2607c4d695255a69e9f2beaebcc5d4b40aea0254e1c6929ee57c1f0bbc9f8972",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "55mm diameter",
+      "3.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_55mm_3.5_rev",
+       "file": "lightbulb-2/lightbulb_2_55mm_3.5_rev.stl",
+       "sha256": "8fe181c350c9cf162356ac54b55c28d19e155732295b3af581eaca7a2acc292a",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "55mm diameter",
+      "4 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_2_55mm_4_rev",
+       "file": "lightbulb-2/lightbulb_2_55mm_4_rev.stl",
+       "sha256": "80174404a7f0cc6c97e32ae45252eb3ea62290acaed2a6568afe40137b89e4d1",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    }
+   ]
+  },
+  "lightbulb-3": {
+   "name": "Lightbulb 3",
+   "note": "",
+   "site": "assets.html#lightbulb-3",
+   "groups": [
+    {
+     "variation": "Lightbulb geometry",
+     "slot": null,
+     "variants": [
+      {
+       "label": "70mm diameter",
+       "default": false
+      },
+      {
+       "label": "80mm diameter",
+       "default": false
+      },
+      {
+       "label": "90mm diameter",
+       "default": false
+      }
+     ],
+     "display_offset_mm": null
+    },
+    {
+     "variation": "Amount of rotation to tighten",
+     "slot": null,
+     "variants": [
+      {
+       "label": "2 revolutions",
+       "default": false
+      },
+      {
+       "label": "2.5 revolutions",
+       "default": false
+      },
+      {
+       "label": "3 revolutions",
+       "default": false
+      },
+      {
+       "label": "3.5 revolutions",
+       "default": false
+      },
+      {
+       "label": "4 revolutions",
+       "default": false
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ],
+   "combinations": [
+    {
+     "variants": [
+      "70mm diameter",
+      "2 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_70mm_2_rev",
+       "file": "lightbulb-3/lightbulb_3_70mm_2_rev.stl",
+       "sha256": "43602c8b207a97e9392442501e3b937bcc4bea75f0b50402023060e16051a81c",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "70mm diameter",
+      "2.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_70mm_2.5_rev",
+       "file": "lightbulb-3/lightbulb_3_70mm_2.5_rev.stl",
+       "sha256": "655046171e9a03ac5b3cfcc133a81c21733b270199b8bc1db9650ccc1cde61e6",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "70mm diameter",
+      "3 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_70mm_3_rev",
+       "file": "lightbulb-3/lightbulb_3_70mm_3_rev.stl",
+       "sha256": "3f930fd75e6489a531238688bd81d26424c15355436cdde6f5775d6fca39a518",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "70mm diameter",
+      "3.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_70mm_3.5_rev",
+       "file": "lightbulb-3/lightbulb_3_70mm_3.5_rev.stl",
+       "sha256": "6c57a6b26c033234e155b775a87c5d7b1fd9acf7e9799b44fd098a600ec6b74e",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "70mm diameter",
+      "4 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_70mm_4_rev",
+       "file": "lightbulb-3/lightbulb_3_70mm_4_rev.stl",
+       "sha256": "3c2ef04d3ecccc2237052ef31b62bafbca0f581b67833890bf73d4762533165a",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "80mm diameter",
+      "2 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_80mm_2_rev",
+       "file": "lightbulb-3/lightbulb_3_80mm_2_rev.stl",
+       "sha256": "7f1c06bf2e1294cbfa1567abb23f07e367ff7010bdbcb91aecce56d963207239",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "80mm diameter",
+      "2.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_80mm_2.5_rev",
+       "file": "lightbulb-3/lightbulb_3_80mm_2.5_rev.stl",
+       "sha256": "bc53a00072bb4bacd3a372b70fb43fa723efcf32f5e8056e3ffe5d411454d3d2",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "80mm diameter",
+      "3 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_80mm_3_rev",
+       "file": "lightbulb-3/lightbulb_3_80mm_3_rev.stl",
+       "sha256": "50a76ad8c15b55f2af320ce0fc10afc62e6dec082a961aefbf86306fc8229c81",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "80mm diameter",
+      "3.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_80mm_3.5_rev",
+       "file": "lightbulb-3/lightbulb_3_80mm_3.5_rev.stl",
+       "sha256": "1379b7a2a18c15d1a47448997b6cc6a8075c1f73906d7c3000c83d39cb43af04",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "80mm diameter",
+      "4 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_80mm_4_rev",
+       "file": "lightbulb-3/lightbulb_3_80mm_4_rev.stl",
+       "sha256": "1d14c1414cb7b9c2dfafd09c5d93a0a7f0089f6aa13b8e63f3b9cb2fd174e01e",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "90mm diameter",
+      "2 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_90mm_2_rev",
+       "file": "lightbulb-3/lightbulb_3_90mm_2_rev.stl",
+       "sha256": "88f714e2404af6ef4e8b6f15e67455804c55f753b114c111ff0395dae5597c12",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "90mm diameter",
+      "2.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_90mm_2.5_rev",
+       "file": "lightbulb-3/lightbulb_3_90mm_2.5_rev.stl",
+       "sha256": "2855b45b78564fbf950a1aa9fd11bd50ba9cbae5f2483821bbbedb72d5764e5c",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "90mm diameter",
+      "3 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_90mm_3_rev",
+       "file": "lightbulb-3/lightbulb_3_90mm_3_rev.stl",
+       "sha256": "da770729be4cd9a9b057b96229c304a832e838c2ce35399b058ac210dfcba5d8",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "90mm diameter",
+      "3.5 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_90mm_3.5_rev",
+       "file": "lightbulb-3/lightbulb_3_90mm_3.5_rev.stl",
+       "sha256": "eb9e88a5ecb199a8dc884e900810f0582d537074043cf8168a2ee1029ef5908f",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    },
+    {
+     "variants": [
+      "90mm diameter",
+      "4 revolutions"
+     ],
+     "parts": [
+      {
+       "name": "lightbulb_3_90mm_4_rev",
+       "file": "lightbulb-3/lightbulb_3_90mm_4_rev.stl",
+       "sha256": "bafc4d5f95ae6db619392cc792a28942b769a9eb15209498ccfaeddb95cfd3b8",
+       "color": [
+        246,
+        246,
+        243
+       ],
+       "color_name": "white"
+      }
+     ]
+    }
+   ]
+  },
+  "lightbulb-slot": {
+   "name": "Lightbulb slot",
+   "note": "",
+   "site": "assets.html#lightbulb-slot",
+   "groups": [
+    {
+     "variation": "Amount of rotation to tighten",
+     "slot": null,
+     "variants": [
+      {
+       "label": "2 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "lightbulb_slot_2_rev",
+         "file": "lightbulb-slot/lightbulb_slot_2_rev.stl",
+         "sha256": "613d84b14f444ecce217efb100a45671bb80ea08ebe6c02b5cfc64e15e1238cb",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "2.5 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "lightbulb_slot_2.5_rev",
+         "file": "lightbulb-slot/lightbulb_slot_2.5_rev.stl",
+         "sha256": "780f40e0d39037ad745cc73ed1282153d1d51e452ae91c2ea0321e4222abe446",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "3 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "lightbulb_slot_3_rev",
+         "file": "lightbulb-slot/lightbulb_slot_3_rev.stl",
+         "sha256": "3e5c8c23f494aa3bc8c3cf20b420a2e77386b469d7ee885a4e766e8b51302173",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "3.5 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "lightbulb_slot_3.5_rev",
+         "file": "lightbulb-slot/lightbulb_slot_3.5_rev.stl",
+         "sha256": "b3e6015f589d10dd7c9969020a08f4de90b6215401ddb230a78cb164eeffb2a6",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "4 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "lightbulb_slot_4_rev",
+         "file": "lightbulb-slot/lightbulb_slot_4_rev.stl",
+         "sha256": "c4980ef919a3266207f2023d39a2f8e0a22ae64077804225151e740490ac1bf6",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "platform": {
+   "name": "Platform",
+   "note": "Requires 10in x 10in acrylic sheet (like [this](https://a.co/d/0fWvHZPB))",
+   "site": "assets.html#platform",
+   "parts": [
+    {
+     "name": "platform_1",
+     "file": "platform/platform_1.stl",
+     "sha256": "2aec678f6de42962edd64aa303686117649360a127c9733df74ee36cd87f4ac2",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    },
+    {
+     "name": "platform_2",
+     "file": "platform/platform_2.stl",
+     "sha256": "df50004553083affebef8f9af3d4deccbcbfe282a7bc7db17d9910d5a23d900f",
+     "color": [
+      0,
+      0,
+      0
+     ],
+     "color_name": null
+    }
+   ]
+  },
+  "ruler": {
+   "name": "Ruler",
+   "note": "",
+   "site": "assets.html#ruler",
+   "parts": [
+    {
+     "name": "ruler",
+     "file": "ruler/ruler.stl",
+     "sha256": "7babea9a68e44f39ca17c004bf6426c51030c3bf1a5a54cfc142c9dd80348571",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "screw": {
+   "name": "Screw",
+   "note": "",
+   "site": "assets.html#screw",
+   "groups": [
+    {
+     "variation": "Screw length",
+     "slot": null,
+     "variants": [
+      {
+       "label": "6.5 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "screw_6.5_rev",
+         "file": "screw/screw_6.5_rev.stl",
+         "sha256": "9d4e4ae497fcf687283eff2f2342dbe57accdbe2a72f040f98e2d63b07e8dd3d",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "7.5 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "screw_7.5_rev",
+         "file": "screw/screw_7.5_rev.stl",
+         "sha256": "c15c7dde64e9e57c3a4aefe463c371f1873779ca966114305cdb60c856a39ac3",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "bolt": {
+   "name": "Bolt",
+   "note": "",
+   "site": "assets.html#bolt",
+   "groups": [
+    {
+     "variation": "Bolt length",
+     "slot": null,
+     "variants": [
+      {
+       "label": "7 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bolt_7_rev",
+         "file": "bolt/bolt_7_rev.stl",
+         "sha256": "dac1d19b024a28c8c251aa44fbb7104cca73b5868d1146891bd40aa72334279f",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "8 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bolt_8_rev",
+         "file": "bolt/bolt_8_rev.stl",
+         "sha256": "9c3e894918aca8d24ab48a72d2be3fb92fdf64ac6e55e87ca4be7989dbe43640",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "9 revolutions",
+       "default": false,
+       "parts": [
+        {
+         "name": "bolt_9_rev",
+         "file": "bolt/bolt_9_rev.stl",
+         "sha256": "07df07f19b86a31ba9bb75898f7b32ae83ec469ddb74f34a0158b10ecd66bfd4",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      },
+      {
+       "label": "Long",
+       "default": false,
+       "parts": [
+        {
+         "name": "bolt_long",
+         "file": "bolt/bolt_long.stl",
+         "sha256": "08ea1d131d13c451631bc04e429448dbd5687e2ae421599a422739b50439c5b1",
+         "color": [
+          120,
+          120,
+          120
+         ],
+         "color_name": "gray"
+        }
+       ]
+      }
+     ],
+     "display_offset_mm": null
+    }
+   ]
+  },
+  "nut": {
+   "name": "Nut",
+   "note": "",
+   "site": "assets.html#nut",
+   "parts": [
+    {
+     "name": "nut",
+     "file": "nut/nut.stl",
+     "sha256": "3bad42de41efdba3a189918819c7206225445294ab31c47d2cf6459252899096",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "allen-key": {
+   "name": "Allen key",
+   "note": "",
+   "site": "assets.html#allen-key",
+   "parts": [
+    {
+     "name": "allen_key",
+     "file": "allen-key/allen_key.stl",
+     "sha256": "3b9334760f1433f19e0bfbc9d781981fecbe67170a831f0b1acbc92c61cdee68",
+     "color": [
+      45,
+      45,
+      45
+     ],
+     "color_name": "black"
+    }
+   ]
+  },
+  "screwdriver": {
+   "name": "Screwdriver",
+   "note": "",
+   "site": "assets.html#screwdriver",
+   "parts": [
+    {
+     "name": "screwdriver",
+     "file": "screwdriver/screwdriver.stl",
+     "sha256": "682746cab80a14af33e0f8f858cbd4f38d43db78c35d1c2b3f969e15cf279e91",
+     "color": [
+      45,
+      45,
+      45
+     ],
+     "color_name": "black"
+    }
+   ]
+  },
+  "wrench": {
+   "name": "Wrench",
+   "note": "",
+   "site": "assets.html#wrench",
+   "parts": [
+    {
+     "name": "wrench",
+     "file": "wrench/wrench.stl",
+     "sha256": "e5763e3426bef5348e439c9db64bfb179357b710f17ac10494d553f37825017b",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "toy-assembly-block": {
+   "name": "Toy assembly block",
+   "note": "",
+   "site": "assets.html#toy-assembly-block",
+   "parts": [
+    {
+     "name": "toy_assembly_block_bottom",
+     "file": "toy-assembly-block/toy_assembly_block_bottom.stl",
+     "sha256": "5188e6b4c8146fa9d78f246533cfc73c11e2d48a98d2d5886f3438330d80895a",
+     "color": [
+      255,
+      255,
+      0
+     ],
+     "color_name": "yellow"
+    },
+    {
+     "name": "toy_assembly_block_top",
+     "file": "toy-assembly-block/toy_assembly_block_top.stl",
+     "sha256": "30d3ee28b7f9fb51db8e9075b865e6195e098587bf7c454f0126f78188b6c142",
+     "color": [
+      255,
+      255,
+      0
+     ],
+     "color_name": "yellow"
+    }
+   ]
+  },
+  "chopstick": {
+   "name": "Chopstick",
+   "note": "",
+   "site": "assets.html#chopstick",
+   "parts": [
+    {
+     "name": "chopstick",
+     "file": "chopstick/chopstick.stl",
+     "sha256": "4899c0a6ea17a40fc38ffeeac85d2e54e088fd47b8463de606c5648c8f543f49",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "fork": {
+   "name": "Fork",
+   "note": "",
+   "site": "assets.html#fork",
+   "parts": [
+    {
+     "name": "fork",
+     "file": "fork/fork.stl",
+     "sha256": "5cdc7bdf6c101ee50a6ff07cb5bf89acafa711645382100b5a3fff64faf74e1f",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "knife": {
+   "name": "Knife",
+   "note": "",
+   "site": "assets.html#knife",
+   "parts": [
+    {
+     "name": "knife",
+     "file": "knife/knife.stl",
+     "sha256": "aa72a2526bc92b0231bd4b5e6da945dd9e39050f31315f029d39afec602d686f",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "spoon": {
+   "name": "Spoon",
+   "note": "",
+   "site": "assets.html#spoon",
+   "parts": [
+    {
+     "name": "spoon",
+     "file": "spoon/spoon.stl",
+     "sha256": "51530ba69187f645350f3a269355877ee1ca3a63b1f7afd80bc0ccb55fea0328",
+     "color": [
+      120,
+      120,
+      120
+     ],
+     "color_name": "gray"
+    }
+   ]
+  },
+  "utensil-bin-horizontal": {
+   "name": "Utensil bin (horizontal)",
+   "note": "",
+   "site": "assets.html#utensil-bin-horizontal",
+   "parts": [
+    {
+     "name": "utensil_bin_horizontal",
+     "file": "utensil-bin-horizontal/utensil_bin_horizontal.stl",
+     "sha256": "0f4db765b9d29107391d6a0a60e2c3c5c1270447ae769ace904251005395e068",
+     "color": [
+      255,
+      255,
+      0
+     ],
+     "color_name": "yellow"
+    }
+   ]
+  },
+  "utensil-bin-vertical": {
+   "name": "Utensil bin (vertical)",
+   "note": "",
+   "site": "assets.html#utensil-bin-vertical",
+   "parts": [
+    {
+     "name": "utensil_bin_vertical",
+     "file": "utensil-bin-vertical/utensil_bin_vertical.stl",
+     "sha256": "69f1ce18f1245fc9bba23a0ae0d4632edad4e7c63a3015c8d3c2b287e009fa07",
+     "color": [
+      255,
+      255,
+      0
+     ],
+     "color_name": "yellow"
+    }
+   ]
+  }
+ }
+}

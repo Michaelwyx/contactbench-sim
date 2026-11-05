@@ -1,0 +1,654 @@
+{
+ "card_holder": [
+  {
+   "file": "1_card_10_body1.stl",
+   "faces": 2360,
+   "extent_mm": [
+    1.2,
+    8.5,
+    5.5
+   ],
+   "center_mm": [
+    -2.9,
+    0.6,
+    3.0
+   ],
+   "watertight": false
+  },
+  {
+   "file": "1_card_1_body1.stl",
+   "faces": 2360,
+   "extent_mm": [
+    1.2,
+    8.5,
+    5.5
+   ],
+   "center_mm": [
+    -2.9,
+    0.6,
+    3.0
+   ],
+   "watertight": false
+  },
+  {
+   "file": "1_card_2_body1.stl",
+   "faces": 2360,
+   "extent_mm": [
+    1.2,
+    8.5,
+    5.5
+   ],
+   "center_mm": [
+    -2.9,
+    0.6,
+    3.0
+   ],
+   "watertight": false
+  },
+  {
+   "file": "1_card_3_body1.stl",
+   "faces": 2360,
+   "extent_mm": [
+    1.2,
+    8.5,
+    5.5
+   ],
+   "center_mm": [
+    -2.9,
+    0.6,
+    3.0
+   ],
+   "watertight": false
+  },
+  {
+   "file": "1_card_4_body1.stl",
+   "faces": 2360,
+   "extent_mm": [
+    1.2,
+    8.5,
+    5.5
+   ],
+   "center_mm": [
+    -2.9,
+    0.6,
+    3.0
+   ],
+   "watertight": false
+  },
+  {
+   "file": "1_card_5_body1.stl",
+   "faces": 2360,
+   "extent_mm": [
+    1.2,
+    8.5,
+    5.5
+   ],
+   "center_mm": [
+    -2.9,
+    0.6,
+    3.0
+   ],
+   "watertight": false
+  },
+  {
+   "file": "1_card_6_body1.stl",
+   "faces": 2360,
+   "extent_mm": [
+    1.2,
+    8.5,
+    5.5
+   ],
+   "center_mm": [
+    -2.9,
+    0.6,
+    3.0
+   ],
+   "watertight": false
+  },
+  {
+   "file": "1_card_7_body1.stl",
+   "faces": 2360,
+   "extent_mm": [
+    1.2,
+    8.5,
+    5.5
+   ],
+   "center_mm": [
+    -2.9,
+    0.6,
+    3.0
+   ],
+   "watertight": false
+  },
+  {
+   "file": "1_card_8_body1.stl",
+   "faces": 2360,
+   "extent_mm": [
+    1.2,
+    8.5,
+    5.5
+   ],
+   "center_mm": [
+    -2.9,
+    0.6,
+    3.0
+   ],
+   "watertight": false
+  },
+  {
+   "file": "1_card_9_body1.stl",
+   "faces": 2360,
+   "extent_mm": [
+    1.2,
+    8.5,
+    5.5
+   ],
+   "center_mm": [
+    -2.9,
+    0.6,
+    3.0
+   ],
+   "watertight": false
+  },
+  {
+   "file": "1_holder_1_body1.stl",
+   "faces": 10244,
+   "extent_mm": [
+    5.8,
+    9.05,
+    3.7
+   ],
+   "center_mm": [
+    -3.0,
+    0.5,
+    1.9
+   ],
+   "watertight": true
+  }
+ ],
+ "card_swiper": [
+  {
+   "file": "1_card_v2_1_part4_1_body1.stl",
+   "faces": 236,
+   "extent_mm": [
+    8.5,
+    0.12,
+    5.5
+   ],
+   "center_mm": [
+    0.9,
+    -9.6,
+    3.8
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_part1_1_body1.stl",
+   "faces": 5956,
+   "extent_mm": [
+    11.0,
+    3.3,
+    3.55
+   ],
+   "center_mm": [
+    0.9,
+    -9.0,
+    1.8
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_part2_1_body1.stl",
+   "faces": 3764,
+   "extent_mm": [
+    10.0,
+    2.24,
+    0.98
+   ],
+   "center_mm": [
+    0.9,
+    -8.4,
+    2.2
+   ],
+   "watertight": true
+  }
+ ],
+ "charging_block_outlet": [
+  {
+   "file": "1_charging_block_3_1_body1.stl",
+   "faces": 9736,
+   "extent_mm": [
+    4.25,
+    3.5,
+    5.5
+   ],
+   "center_mm": [
+    15.2,
+    6.0,
+    2.7
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_charging_block_v2_1_part5_1_body1.stl",
+   "faces": 21138,
+   "extent_mm": [
+    6.4,
+    2.8,
+    2.5
+   ],
+   "center_mm": [
+    14.5,
+    0.5,
+    1.2
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_shell_1_body1.stl",
+   "faces": 5628,
+   "extent_mm": [
+    6.3,
+    6.3,
+    2.25
+   ],
+   "center_mm": [
+    14.5,
+    13.0,
+    1.1
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_spring_8mm_1_body1.stl",
+   "faces": 5988,
+   "extent_mm": [
+    1.08,
+    5.08,
+    2.03
+   ],
+   "center_mm": [
+    14.0,
+    13.0,
+    1.0
+   ],
+   "watertight": true
+  }
+ ],
+ "fasteners": [
+  {
+   "file": "nut_075mm_1_body1.stl",
+   "faces": 11558,
+   "extent_mm": [
+    1.76,
+    1.55,
+    0.7
+   ],
+   "center_mm": [
+    9.7,
+    -23.0,
+    0.3
+   ],
+   "watertight": true
+  },
+  {
+   "file": "nut_075mm_2_body1.stl",
+   "faces": 11558,
+   "extent_mm": [
+    1.76,
+    1.55,
+    0.7
+   ],
+   "center_mm": [
+    9.7,
+    -25.0,
+    0.3
+   ],
+   "watertight": true
+  },
+  {
+   "file": "nut_075mm_3_body1.stl",
+   "faces": 11558,
+   "extent_mm": [
+    1.76,
+    1.55,
+    0.7
+   ],
+   "center_mm": [
+    9.7,
+    -27.0,
+    0.3
+   ],
+   "watertight": true
+  },
+  {
+   "file": "nut_075mm_4_body1.stl",
+   "faces": 11558,
+   "extent_mm": [
+    1.76,
+    1.55,
+    0.7
+   ],
+   "center_mm": [
+    9.7,
+    -29.0,
+    0.3
+   ],
+   "watertight": true
+  },
+  {
+   "file": "screw_075mm_1_body1.stl",
+   "faces": 26022,
+   "extent_mm": [
+    1.76,
+    1.55,
+    2.7
+   ],
+   "center_mm": [
+    7.6,
+    -23.0,
+    1.4
+   ],
+   "watertight": true
+  },
+  {
+   "file": "screw_075mm_2_body1.stl",
+   "faces": 26022,
+   "extent_mm": [
+    1.76,
+    1.55,
+    2.7
+   ],
+   "center_mm": [
+    7.6,
+    -25.0,
+    1.4
+   ],
+   "watertight": true
+  },
+  {
+   "file": "screw_075mm_3_body1.stl",
+   "faces": 26022,
+   "extent_mm": [
+    1.76,
+    1.55,
+    2.7
+   ],
+   "center_mm": [
+    7.6,
+    -27.0,
+    1.4
+   ],
+   "watertight": true
+  },
+  {
+   "file": "screw_075mm_4_body1.stl",
+   "faces": 26022,
+   "extent_mm": [
+    1.76,
+    1.55,
+    2.7
+   ],
+   "center_mm": [
+    7.6,
+    -29.0,
+    1.4
+   ],
+   "watertight": true
+  }
+ ],
+ "hanging_board": [
+  {
+   "file": "1_part1_1_body1.stl",
+   "faces": 37020,
+   "extent_mm": [
+    6.9,
+    17.0,
+    18.1
+   ],
+   "center_mm": [
+    -12.1,
+    -2.5,
+    9.1
+   ],
+   "watertight": true
+  }
+ ],
+ "key_1": [
+  {
+   "file": "1_part1_1_body1.stl",
+   "faces": 13188,
+   "extent_mm": [
+    2.0,
+    0.68,
+    4.97
+   ],
+   "center_mm": [
+    -11.0,
+    -8.8,
+    11.8
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_part3_1_body1.stl",
+   "faces": 13188,
+   "extent_mm": [
+    2.0,
+    0.47,
+    4.98
+   ],
+   "center_mm": [
+    -11.0,
+    -8.4,
+    11.8
+   ],
+   "watertight": true
+  }
+ ],
+ "keyring": [
+  {
+   "file": "1_part3_1_body1.stl",
+   "faces": 8040,
+   "extent_mm": [
+    0.25,
+    2.6,
+    2.6
+   ],
+   "center_mm": [
+    -11.0,
+    -8.1,
+    14.8
+   ],
+   "watertight": true
+  }
+ ],
+ "screw_together_blocks": [
+  {
+   "file": "1_0.75mm_nut_1_body1.stl",
+   "faces": 23116,
+   "extent_mm": [
+    1.55,
+    6.76,
+    0.7
+   ],
+   "center_mm": [
+    9.0,
+    -16.5,
+    0.4
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_0.75mm_nut_2_body1.stl",
+   "faces": 23116,
+   "extent_mm": [
+    1.55,
+    6.76,
+    0.7
+   ],
+   "center_mm": [
+    9.0,
+    -16.5,
+    0.4
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_0.75mm_screw_1_1_body1.stl",
+   "faces": 47872,
+   "extent_mm": [
+    1.76,
+    6.55,
+    2.45
+   ],
+   "center_mm": [
+    9.0,
+    -16.5,
+    1.5
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_0.75mm_screw_1_2_body1.stl",
+   "faces": 47872,
+   "extent_mm": [
+    1.76,
+    6.55,
+    2.45
+   ],
+   "center_mm": [
+    9.0,
+    -16.5,
+    1.5
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_0.75mm_screw_1_3_body1.stl",
+   "faces": 47872,
+   "extent_mm": [
+    1.76,
+    6.55,
+    2.45
+   ],
+   "center_mm": [
+    9.0,
+    -16.5,
+    1.5
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_bottom_1_body1.stl",
+   "faces": 1628,
+   "extent_mm": [
+    3.0,
+    8.0,
+    1.1
+   ],
+   "center_mm": [
+    9.0,
+    -16.5,
+    0.6
+   ],
+   "watertight": true
+  },
+  {
+   "file": "1_top_1_body1.stl",
+   "faces": 860,
+   "extent_mm": [
+    3.0,
+    8.0,
+    1.4
+   ],
+   "center_mm": [
+    9.0,
+    -16.5,
+    1.3
+   ],
+   "watertight": true
+  }
+ ],
+ "screwdriver": [
+  {
+   "file": "1_part2_1_body1.stl",
+   "faces": 9422,
+   "extent_mm": [
+    1.2,
+    12.5,
+    1.2
+   ],
+   "center_mm": [
+    12.5,
+    -16.9,
+    0.7
+   ],
+   "watertight": true
+  }
+ ],
+ "unidentified": [
+  {
+   "file": "part12_1_body1.stl",
+   "faces": 7912,
+   "extent_mm": [
+    3.0,
+    6.75,
+    0.5
+   ],
+   "center_mm": [
+    15.8,
+    -16.6,
+    0.3
+   ],
+   "watertight": true
+  },
+  {
+   "file": "part1_1_body1.stl",
+   "faces": 12412,
+   "extent_mm": [
+    0.75,
+    3.0,
+    11.31
+   ],
+   "center_mm": [
+    -11.1,
+    -2.5,
+    10.4
+   ],
+   "watertight": true
+  }
+ ],
+ "utensil_chopstick": [
+  {
+   "file": "1_part2_1_body1.stl",
+   "faces": 4428,
+   "extent_mm": [
+    2.28,
+    1.42,
+    19.93
+   ],
+   "center_mm": [
+    -7.8,
+    -24.5,
+    10.0
+   ],
+   "watertight": true
+  },
+  {
+   "file": "2_part2_1_body1.stl",
+   "faces": 4428,
+   "extent_mm": [
+    2.28,
+    1.42,
+    19.93
+   ],
+   "center_mm": [
+    -7.8,
+    -25.2,
+    10.1
+   ],
+   "watertight": true
+  }
+ ]
+}

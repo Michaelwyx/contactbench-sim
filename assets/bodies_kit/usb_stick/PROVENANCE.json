@@ -1,0 +1,85 @@
+{
+ "units": "m",
+ "frame": "STEP (Z-up), assembly coordinates kept",
+ "source_zip": "STEP-20261015T040134Z-1-001.zip (repo root, sha256 998af1e66c067927175c358ccfb482253b6ec1921fa239c80d5395142babac72)",
+ "tessellation": "cascadio 0.1.1 via final_asset_table/source/convert_step.py (0.01 mm chordal, 0.5 rad angular)",
+ "mesh_cache": "paper-writing/figures/asset-overviews/final_asset_table/mesh_cache",
+ "used_by": "force_bench.appendix_tasks.plug_in_usb (appendix task 27, Plug in USB)",
+ "files": {
+  "usb_1.stl": {
+   "step_file": "usb_1.step",
+   "step_sha256": "d4cff3b6e3f7258b9159c12d0d421cedbcfa8a6d39943552bd63ae554874d9f5",
+   "part": "usb head",
+   "fusion_color_srgb": [
+    90,
+    90,
+    90
+   ],
+   "n_tris": 1422,
+   "watertight": true,
+   "bounds_mm": [
+    [
+     -12.0,
+     -8.0,
+     -5.0
+    ],
+    [
+     8.0,
+     8.0,
+     5.0
+    ]
+   ],
+   "stl_sha256": "41cc149255fb8fe5ad598389e0103a29a3cd1f6f0ef66fc247096222694aae8e"
+  },
+  "usb_head_2.stl": {
+   "step_file": "usb_head_2.step",
+   "step_sha256": "ac5891aa49bb7135c948d0f3ba45f647c8c6c8b7001731ca32eea751f5d0bcea",
+   "part": "usb head 2",
+   "fusion_color_srgb": [
+    90,
+    90,
+    90
+   ],
+   "n_tris": 3668,
+   "watertight": true,
+   "bounds_mm": [
+    [
+     -12.0,
+     -10.0,
+     -6.5
+    ],
+    [
+     40.0,
+     10.0,
+     6.5
+    ]
+   ],
+   "stl_sha256": "c4550e9039d6371b5e26187f8db30c97f52d022c2fdb464b9fd7104b91c2636f"
+  },
+  "usb_head_3.stl": {
+   "step_file": "usb_head_3.step",
+   "step_sha256": "ecfd8ba11c352eade66e31dc8caca750827abcd6aac07bbd9cecf05ce5301bbc",
+   "part": "usb head 3",
+   "fusion_color_srgb": [
+    90,
+    90,
+    90
+   ],
+   "n_tris": 8964,
+   "watertight": true,
+   "bounds_mm": [
+    [
+     -12.0,
+     -10.0,
+     -5.0
+    ],
+    [
+     25.0,
+     9.998,
+     4.999
+    ]
+   ],
+   "stl_sha256": "904dbad997865a11be44dce4247d09a6d7532a75ac19ef76df41373729b581d8"
+  }
+ }
+}

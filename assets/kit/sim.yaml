@@ -1,0 +1,110 @@
+# How each kit asset is simulated (read by force_bench.kit; the parts and variants come from catalog.json).
+#
+# kind      free       one dynamic body (all parts welded)
+#           fixture    static shapes (all parts welded to the world)
+#           assembly   several bodies without joints, by part role (roles: {part-name pattern: free | fixture});
+#                      threads and fits act through contact (a cap on its bottle, a plug in its socket)
+#           mechanism  bodies and joints built by force_bench.kit.mechanisms.<model>, with per-variant parameters
+# A task may override the kind of a free/fixture asset (add_asset(..., fixed=True)).
+#
+# Per asset or per part (parts: {pattern: {...}}, "*" suffix = prefix match):
+#   mu              contact friction (PLA on PLA ~0.5)
+#   mass_g          measured mass; otherwise estimated from the print settings below
+#   collision       sdf (default) | none
+#   sdf_cell_mm     target signed-distance-field cell size (default 0.4 mm) -> resolution, clamped to
+#   sdf_min_res / sdf_max_res
+#   sdf_res         fixed resolution (cells along the longest side), overrides sdf_cell_mm
+#   extra_boxes     non-printed parts (name, size_mm, center_mm in the CAD frame, color 0-255, mu, mass_g)
+#   margin_mm, narrow_band_mm, gap_mm (contact activation distance; tight fits need these small: the charger blades
+#                   have 0.25 mm of play per side in their slots)
+#
+# Units: SI in code; mm in names (_mm), grams in mass_g.
+
+defaults:
+  mu: 0.5
+  sdf_cell_mm: 0.4
+  sdf_min_res: 64
+  sdf_max_res: 384
+  margin_mm: 1.2
+  narrow_band_mm: 2.0
+  print:              # the site's print profile: PLA, 0.4 mm nozzle, 0.2 mm layers, 20 % infill
+    density: 1240     # kg/m^3, PLA
+    infill: 0.20
+    wall_mm: 0.8      # two 0.4 mm perimeters; top/bottom skins are about the same
+
+assets:
+  # ── cards, keys, small parts ────────────────────────────────────────────────────────────────────────────────────
+  card: {kind: free, mu: 0.35, sdf_res: 512}
+  card-holder: {kind: fixture, sdf_max_res: 448}
+  key-1: {kind: free, sdf_cell_mm: 0.25}
+  key-2: {kind: free, sdf_cell_mm: 0.25}
+  key-3: {kind: free, sdf_cell_mm: 0.25}
+  key-fob: {kind: free, sdf_cell_mm: 0.3}
+  keyring: {kind: free, sdf_cell_mm: 0.2}
+  ruler: {kind: free, sdf_cell_mm: 0.3}
+  # USB sticks: the 12 x 5 mm plug has 0.175 mm of play per side in the slot's mouth (mechanisms/usb_slot.py)
+  usb-stick-1: {kind: free, sdf_cell_mm: 0.12, sdf_max_res: 512, margin_mm: 0.15, gap_mm: 0.1, mu: 0.4}
+  usb-stick-2: {kind: free, sdf_cell_mm: 0.12, sdf_max_res: 512, margin_mm: 0.15, gap_mm: 0.1, mu: 0.4}
+  usb-stick-3: {kind: free, sdf_cell_mm: 0.12, sdf_max_res: 512, margin_mm: 0.15, gap_mm: 0.1, mu: 0.4}
+  usb-stick-4: {kind: free, sdf_cell_mm: 0.12, sdf_max_res: 512, margin_mm: 0.15, gap_mm: 0.1, mu: 0.4}
+  charging-block-1: {kind: free, sdf_cell_mm: 0.12, sdf_max_res: 512, margin_mm: 0.15, gap_mm: 0.1, mu: 0.4}
+  charging-block-2: {kind: free, sdf_cell_mm: 0.12, sdf_max_res: 512, margin_mm: 0.15, gap_mm: 0.1, mu: 0.4}
+  charging-block-3: {kind: free, sdf_cell_mm: 0.12, sdf_max_res: 512, margin_mm: 0.15, gap_mm: 0.1, mu: 0.4}
+  charging-block-4: {kind: free, sdf_cell_mm: 0.12, sdf_max_res: 512, margin_mm: 0.15, gap_mm: 0.1, mu: 0.4}
+  cup: {kind: free, sdf_cell_mm: 0.2, sdf_max_res: 512, margin_mm: 0.15, gap_mm: 0.15}   # 1 mm walls; nested cups
+
+  # ── fasteners and tools ─────────────────────────────────────────────────────────────────────────────────────────
+  screw: {kind: free, sdf_cell_mm: 0.12}
+  bolt: {kind: free, sdf_cell_mm: 0.12}
+  nut: {kind: free, sdf_cell_mm: 0.12}
+  allen-key: {kind: free, sdf_cell_mm: 0.25}
+  screwdriver: {kind: free, sdf_cell_mm: 0.25}
+  wrench: {kind: free, sdf_cell_mm: 0.3}
+  toy-assembly-block: {kind: fixture, sdf_cell_mm: 0.25}
+  fastener-bin: {kind: fixture}
+
+  # ── utensils and bins ───────────────────────────────────────────────────────────────────────────────────────────
+  chopstick: {kind: free}
+  fork: {kind: free}
+  knife: {kind: free, sdf_cell_mm: 0.3}
+  spoon: {kind: free}
+  utensil-bin-horizontal: {kind: fixture}
+  utensil-bin-vertical: {kind: fixture}
+
+  # ── boards and platforms ────────────────────────────────────────────────────────────────────────────────────────
+  hanging-board: {kind: fixture}
+  platform:
+    kind: fixture
+    extra_boxes:      # the site's note: "Requires 10in x 10in acrylic sheet" (not printed); placed as in platform.obj
+      - {name: acrylic_sheet, size_mm: [254.0, 254.0, 3.18], center_mm: [0.0, 0.0, 52.09], color: [214, 226, 232],
+         mu: 0.4, mass_g: 245}
+
+  # ── charger outlet, USB slot: printed flexures -> sprung pads (force_bench.kit.mechanisms) ──────────────────────
+  outlet: {kind: mechanism, model: outlet, mu: 0.4, sdf_res: 512, margin_mm: 0.15, gap_mm: 0.1}
+  usb-slot: {kind: mechanism, model: usb_slot, mu: 0.4, sdf_cell_mm: 0.12, sdf_max_res: 512, margin_mm: 0.15,
+             gap_mm: 0.1}
+
+  # ── threaded pairs: the thread is real geometry ─────────────────────────────────────────────────────────────────
+  bottle-1: {kind: assembly, roles: {"bottle_*": fixture, "cap_*": free}, sdf_cell_mm: 0.25}
+  bottle-2: {kind: assembly, roles: {"bottle_*": fixture, "cap_*": free}, sdf_cell_mm: 0.25}
+  bottle-3: {kind: assembly, roles: {"bottle_*": fixture, "cap_*": free}, sdf_cell_mm: 0.3}
+  lightbulb-1: {kind: free, sdf_cell_mm: 0.3}
+  lightbulb-2: {kind: free, sdf_cell_mm: 0.3}
+  lightbulb-3: {kind: free, sdf_cell_mm: 0.3}
+  lightbulb-slot: {kind: fixture, sdf_cell_mm: 0.2}
+
+  # ── plugs ───────────────────────────────────────────────────────────────────────────────────────────────────────
+  # Ethernet: the 5-port shell with an insert in every port; the plug's printed latch tab is a hinged body on a
+  # spring drive at the flexure's estimated stiffness (force_bench.kit.mechanisms.ethernet)
+  ethernet-plug-and-slot: {kind: mechanism, model: ethernet, mu: 0.4, sdf_cell_mm: 0.15, sdf_max_res: 512,
+                           margin_mm: 0.15, gap_mm: 0.1}
+
+  # ── dials, door and its modules ─────────────────────────────────────────────────────────────────────────────────
+  # dials: printed springs -> sprung pads / plates, gate = CAD tooth and peg (force_bench.kit.mechanisms.dial);
+  # knob SDF 0.25 mm: the push-down gate runs 0.3-0.5 mm clearances, the pads ride the hub
+  dial: {kind: mechanism, model: dial, type: standard, parts: {"dial_knob*": {sdf_cell_mm: 0.25}}}
+  dial-push-down-to-turn: {kind: mechanism, model: dial, type: push, parts: {"dial_push_knob*": {sdf_cell_mm: 0.25}}}
+  dial-snap-to-position: {kind: mechanism, model: dial, type: snap, parts: {"dial_snap_knob*": {sdf_cell_mm: 0.25}}}
+  doorknob-module: {kind: mechanism, model: doorknob_module}
+  lock-module: {kind: mechanism, model: lock_module}
+  door: {kind: mechanism, model: door}
