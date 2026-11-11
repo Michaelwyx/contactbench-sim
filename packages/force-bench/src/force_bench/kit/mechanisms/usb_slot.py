@@ -112,6 +112,26 @@ R_STICK = np.array([[0.0, 1.0, 0.0],
                     [-1.0, 0.0, 0.0]])
 R_FLIP = np.diag([-1.0, -1.0, 1.0])          # upside down: half a turn about the slot axis
 
+# ── the slot body, for QA (assembly frame, m) ─────────────────────────────────────────────────────────────────────
+MOUTH_HALF = (0.006175, 0.002675)           # the mouth's half extents (x, y): 0.175 mm of play around the plug
+SHELL_BOX = ((-0.026, -0.014, 0.0), (0.026, 0.014, MOUTH_Z))     # the shell's outside
+SHELL_ROUND = 0.0006                        # its 2 mm edge rounds leave the box by up to 0.59 mm
+
+
+def intrusion(p: np.ndarray) -> np.ndarray:
+    """Depth [m] of points (N x 3, assembly frame) inside the slot body: inside the shell's outside box (deeper than
+    its edge rounds) and outside the plug's channel (the mouth extruded down to the centre block), the distance a
+    point must travel to leave the box or to reach the channel; 0 elsewhere.  A signed distance into a 1 mm wall stops
+    growing at 0.5 mm; this keeps growing once a body is through the wall, into the cavity behind it."""
+    p = np.asarray(p, float)
+    lo, hi = np.asarray(SHELL_BOX[0]), np.asarray(SHELL_BOX[1])
+    d_out = np.minimum(p - lo, hi - p).min(axis=1)
+    c_lo = np.array([-MOUTH_HALF[0], -MOUTH_HALF[1], SEAT_TIP_Z])
+    c_hi = np.array([MOUTH_HALF[0], MOUTH_HALF[1], MOUTH_Z + 0.001])
+    in_ch = np.all((p >= c_lo) & (p <= c_hi), axis=1)
+    d_ch = np.linalg.norm(np.maximum(np.maximum(c_lo - p, p - c_hi), 0.0), axis=1)
+    return np.where((d_out > SHELL_ROUND) & ~in_ch, np.minimum(d_out, d_ch), 0.0)
+
 
 def indent_mm(label: str | None) -> float:
     return float(label.split("mm")[0]) if label else 0.2

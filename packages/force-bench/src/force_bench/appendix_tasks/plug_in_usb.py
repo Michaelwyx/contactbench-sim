@@ -32,7 +32,8 @@ PHYSICS MODEL (what the scripted policy meets; nothing positions the stick but t
   mm above the slot face once seated); pad mu 1.4 (MuJoCo takes a pair's mu as the MAX, so pad/PLA = 1.4); finger
   mass 0.12 kg;
 * SolverMuJoCo, 32 substeps, 20 iterations, impratio 10 (the friction rows must be stiff for a gram-scale stick to
-  stay in a pinch: at the default 1.0 it creeps out);
+  stay in a pinch: at the default 1.0 it creeps out); contacts found before every substep (a stick that falls or is
+  swung moves several mm per frame, more than the slot's 1 mm top wall);
 * the PINCH is the force budget of the task: Coulomb capacity 2 x 1.4 x F_pad.  The base pinch is 12 N per pad
   (1.5 mm of overdrive on 8 kN/m fingers), 34 N of capacity; the 0.4 and 0.6 mm springs need more (``PINCH_N``).
 
@@ -57,8 +58,8 @@ and the retreat (the elbow is closest to its limit, at the robot-side edge).  Th
 VERDICT (appendix_qa.json): held_in_hand_at_start, fully_inserted (within 0.5 mm of the CAD seat),
 no_motion_when_pushed (< 0.3 mm gained under >= 6 N), stays_seated_after_release (< 0.3 mm), finger_pinch_real,
 released_and_clear (robot <-> stick/slot < 0.05 N over the final window, hand moved >= 40 mm), start (information
-only: the seed and the slot's pose); physics QA: finite, velocity spikes, penetration of the stick into the exact
-CAD shell / centre / jaws (0.4 mm), envelope.
+only: the seed and the slot's pose); physics QA: finite, velocity spikes, penetration (0.4 mm) of the stick into the
+exact CAD shell / centre / jaws and into the slot body behind its walls (``usb_slot.intrusion``, every frame), envelope.
 
 Run:  python -m force_bench.appendix_tasks.plug_in_usb --usb 1 [--spring 0.6] [--offset-mm DX,DY] [--seed N]
       -> outputs/appendix_tasks/plug_in_usb_<N>[_spring04|_spring06]/
@@ -210,6 +211,10 @@ def main(argv=None):
 
     rig = appendix_rig(name)
     rig.substeps = int(a.substeps)
+    # collide before every substep (docs/physics_notes.md rules 5.1-5.3), set at build time so it holds whoever drives
+    # the scene: a stick that falls or is swung moves several mm per frame, more than the slot's 1 mm top wall, and with
+    # contacts found once per frame (0.1 mm contact gap) it could cross the wall between two contact updates
+    rig.collide_every_substep = True
     base_xf = wp.transform(wp.vec3(*ROBOT_BASE), wp.quat_identity())
     rig.add_robot(base_xf)
     for d in (7, 8):
@@ -608,6 +613,23 @@ def main(argv=None):
                                     tol=PEN_TOL, n_samples=48)
         qa.check_penetration_static("usb_stick", plug_local, world, np.zeros(3), f"plug(all vertices)->{nm}",
                                     tol=PEN_TOL, n_samples=96)
+    # the stick inside the slot body behind its walls (usb_slot.intrusion): a signed distance into a 1 mm wall never
+    # exceeds 0.5 mm, so the checks above cannot see a stick that has gone through the wall
+    surf, _ = trimesh.sample.sample_surface_even(st_tm, 2000, seed=0)
+    box = np.random.default_rng(0).uniform(st_tm.bounds[0], st_tm.bounds[1], size=(8000, 3))
+    pts_local = np.vstack([surf, box[st_tm.contains(box)][:2000]]) - c_cad
+    slot_inv = np.linalg.inv(slot_pose)
+    deep, deep_t = 0.0, None
+    for f in range(len(qa.t)):
+        q = qa.body_q[f, qa._idx("usb_stick")]
+        R = trimesh.transformations.quaternion_matrix([q[6], q[3], q[4], q[5]])[:3, :3]
+        d = float(U.intrusion((pts_local @ R.T + q[:3]) @ slot_inv[:3, :3].T + slot_inv[:3, 3]).max())
+        if d > deep:
+            deep, deep_t = d, float(qa.t[f])
+    pen = qa.report["checks"]["penetration"]
+    pen["pairs"]["stick->slot body (behind its walls)"] = {"max_depth_mm": round(deep * 1000, 3), "at_t": deep_t,
+                                                           "pass": bool(deep < PEN_TOL)}
+    pen["pass"] = bool(pen["pass"] and deep < PEN_TOL)
     lo = mouth - np.array([0.06, 0.06, 0.03])
     hi = mouth + np.array([0.06, 0.06, 0.08])
     qa.check_envelope(["usb_stick"], lo, hi)

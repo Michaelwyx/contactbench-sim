@@ -69,6 +69,11 @@ class Variant:
     retreat_up_bias: float = 0.0
     t_still: float = 1.0
 
+    # collision cadence of the derived run (docs/physics_notes.md rules 5.1-5.3): a subclass sets True to collide
+    # before every substep from the moment the rig is built, whoever drives it; None keeps the suite task's cadence.
+    # (A plain class attribute, not a dataclass field, so a subclass can override it.)
+    collide_every_substep = None
+
     # ── filled in at run time ───────────────────────────────────────────
     rig: object = None
     ns: dict = field(default_factory=dict)
@@ -174,6 +179,8 @@ def run_variant(v: Variant) -> dict | None:
 
     def __init__(self, name, *a, **kw):
         orig["__init__"](self, v.name, *a, **kw)
+        if v.collide_every_substep is not None:
+            self.collide_every_substep = bool(v.collide_every_substep)
         self.out_dir = APPENDIX_OUT / run_name(v.name)
         self.appendix_source_name = name
         v.rig = self

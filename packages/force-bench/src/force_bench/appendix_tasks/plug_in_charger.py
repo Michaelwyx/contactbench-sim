@@ -47,6 +47,10 @@ OPEN_TO = 0.024       # finger dof: brick blocks at 0.0175
 
 class ChargerVariant(Variant):
     t_push: float = 1.6
+    # collide before every substep (the suite task collides once per frame): a block that is dropped, swung or pressed
+    # in fast moves more per frame than the outlet's 2.2 mm face wall.  The pad fit
+    # (examples/force_response/probe_charger.py) collides every substep as well.
+    collide_every_substep = True
 
     def configure(self, mod):
         # the extraction budget is never used; keep the run short
@@ -176,6 +180,8 @@ VARIANT = ChargerVariant(
         "must stay < 0.3 mm; the fingers then open at the pushed pose",
         "release (fingers open past the brick) + 6 cm retreat + 1 s still",
         "suite task_success / multi_bite_extraction (extraction gates) dropped",
+        "contacts found before every substep (the suite task: once per frame), so a block moving several mm per "
+        "frame cannot cross the outlet's face wall between two contact updates",
     ],
     call_original_after_cut=False,
     retreat_m=0.06, t_open=0.6, t_retreat=1.4, t_still=1.0,

@@ -45,6 +45,20 @@ def test_seat_pose_touches_without_overlap(key):
     assert np.abs(0.5 * (st.bounds[0][:2] + st.bounds[1][:2])).max() < 2e-5
 
 
+@pytest.mark.parametrize("key", STICKS)
+def test_intrusion_sees_a_stick_through_the_wall(key):
+    """The QA's slot-body depth is zero for a stick on its way in or seated, and large for one pushed through the top
+    wall, where a signed distance into the 1 mm wall cannot exceed 0.5 mm."""
+    st = load_kit()[key].parts()[0].mesh()
+    pts = np.vstack([st.vertices, st.sample(3000, seed=0)])
+    for lift in (0.0, 0.004, 0.012, 0.03):
+        T = U.seat_pose(key, lift=lift)
+        assert U.intrusion(pts @ T[:3, :3].T + T[:3, 3]).max() < 1e-6
+    T = U.seat_pose(key)
+    T[:3, 3] += [0.010, 0.0, 0.0]                 # 10 mm off the mouth: through the top wall
+    assert U.intrusion(pts @ T[:3, :3].T + T[:3, 3]).max() > 0.003
+
+
 def test_flipped_stick_lands_on_the_key():
     _, center = _slot_parts()
     st = load_kit()["usb-stick-1"].parts()[0].mesh()
